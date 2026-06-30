@@ -1,5 +1,109 @@
-﻿---
-title: "Métodos"
----
+﻿# Métodos {#sec-metodos}
 
-Datos y protocolo de investigación
+## Datos abiertos
+
+La presente investigación utiliza la Encuesta de Bienestar Social (EBS) 2023, diseñada por la Subsecretaría de Evaluación Social del Ministerio de Desarrollo Social y Familia de Chile. La EBS es una encuesta de alcance nacional, representativa de la población de 18 años o más residente en viviendas particulares en Chile, con diseño muestral probabilístico, bifásico y estratificado: la primera fase utiliza las viviendas logradas en la Encuesta Casen 2022, y la segunda selecciona aleatoriamente a una persona del hogar [@mds2023].
+
+- **Fuente y acceso:** la base de datos está disponible públicamente en el
+  sitio del Observatorio Social del Ministerio de Desarrollo Social y
+  Familia: <https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-bienestar-social-2023>.
+- **Formato de descarga:** archivo de datos (`.sav`/`.RData`) más
+  documentación metodológica y libro de códigos, descargables sin registro
+  previo.
+- **Licencia/condiciones de uso:** los microdatos son de carácter público y
+  de libre disposición para fines de investigación, citando la fuente
+  según los términos publicados por el Ministerio.
+- **Procedimiento para obtenerlos:** se descarga el archivo de la encuesta
+  desde el enlace anterior y se ubica en `input/data-orig/EBS_2023.RData`
+  (ver `input/README.md` para el detalle).
+
+La base original está compuesta por 11.234 casos. De esta, se extrajo una submuestra intencionada de personas entre 60 y 79 años mediante la filtración de la variable `tramoebs2 == 4` (módulo de caracterización, "Tramos de edad"), obteniendo 3.170 observaciones. Tras aplicar un enfoque de casos completos (*listwise deletion*) sobre las variables del modelo, la muestra final de análisis quedó constituida por 2.994 observaciones.
+
+## Protocolo de investigación (estructura IPO)
+
+### Entrada (Input)
+
+| Elemento | Descripción |
+|---|---|
+| Fuente de datos | Encuesta de Bienestar Social (EBS) 2023, Ministerio de Desarrollo Social y Familia |
+| N original | 11.234 casos |
+| Filtro poblacional | Personas de 60 a 79 años (`tramoebs2 == 4`) |
+| N tras filtro de edad | 3.170 casos |
+| Variable dependiente | Índice de Bienestar Subjetivo (IBS): promedio de `a1`, `a2_a`, `a2_b`, `a12` |
+| Variables independientes | `ss6` (protección financiera en salud), `yy2` (capacidad de llegar a fin de mes), `yy3` (ingreso deseado), `ss1` (salud autopercibida), `rr1` (tamaño de la red de apoyo) |
+
+### Proceso
+
+1. Selección de variables relevantes y filtro por tramo etario.
+2. Recodificación de valores perdidos (códigos -77 a -99) a `NA`.
+3. Eliminación de casos incompletos (*listwise deletion*; pérdida < 5%,
+   umbral bajo el cual no se compromete la representatividad de la muestra
+   [@babbie2013]).
+4. Construcción del IBS como promedio de cuatro ítems Likert (Alfa de
+   Cronbach = 0,71).
+5. Recodificación de `ss1`, `yy2` y `ss6` a variables dummy (0/1).
+6. Reescalado de `yy3` a millones de pesos chilenos.
+7. Estimación de un modelo de regresión lineal jerárquica en tres etapas:
+   (a) dimensión económica, (b) + dimensión salud, (c) + dimensión
+   relacional.
+8. Cálculo de coeficientes estandarizados sobre el modelo completo.
+
+El script reproducible de este proceso se encuentra en `procesamiento/preparacion.qmd` (puntos 1-6) y `procesamiento/analisis.qmd` (puntos 7-8).
+
+### Salida (Output)
+
+- Tabla de estadísticos descriptivos univariados (`output/tables/`).
+- Matriz de correlaciones bivariadas.
+- Tabla comparativa de los tres modelos de regresión jerárquica
+  (`output/tables/modelos-regresion.html`).
+- Coeficientes estandarizados del modelo completo.
+
+## Variables
+
+### Variable dependiente: Índice de Bienestar Subjetivo (IBS)
+
+El IBS se construye como un índice sumativo promediado a partir de cuatro indicadores con escalas tipo Likert de 5 puntos:
+
+- **Satisfacción con la vida** (`a1`): "¿Qué tan satisfecho(a) o
+  insatisfecho(a) se encuentra con su vida?" (1 = totalmente insatisfecho,
+  5 = totalmente satisfecho).
+- **Felicidad** (`a2_a`): "¿Cuán feliz se sintió ayer?" (1 = nada, 5 = muy).
+- **Tranquilidad** (`a2_b`): "¿Cuán tranquilo(a) se sintió ayer?" (1 = nada,
+  5 = muy).
+- **Satisfacción con las relaciones** (`a12`): "¿Qué tan satisfecho(a) está
+  con sus relaciones personales con familiares, amigos, etc.?" (1 =
+  totalmente insatisfecho, 5 = totalmente satisfecho).
+
+El IBS resulta del promedio de los cuatro ítems (rango teórico 1-5; rango observado 1,25-5). No se realizó estandarización dado que los ítems comparten el mismo formato de respuesta; se le otorga tratamiento de nivel intervalar [@devaus2014].
+
+### Variables independientes
+
+**Dimensión económica**
+
+- **Protección financiera en salud** (`ss6`): "Frente a un problema de
+  salud, ¿cuán protegido(a) se siente financieramente?" Recodificada a
+  dummy (0 = desprotegido, 1 = protegido).
+- **Capacidad del hogar para llegar a fin de mes** (`yy2`): "¿Su hogar
+  puede llegar a fin de mes...?" Recodificada a dummy (0 = con dificultad,
+  1 = sin dificultad).
+- **Ingresos deseados** (`yy3`): "¿De cuánto sería un ingreso para cubrir
+  todas las necesidades por un mes?" Variable de razón, reescalada a
+  millones de pesos chilenos. Valores observados entre \$60.000 y
+  \$14.000.000.
+
+**Dimensión salud**
+
+- **Estado de salud autopercibido** (`ss1`): "¿Cómo es su estado de salud
+  actual?" Recodificada a dummy (0 = mala, 1 = buena).
+
+**Dimensión relacional**
+
+- **Tamaño de la red de apoyo social** (`rr1`): "Amistades cercanas para
+  pedir ayuda, ¿cuántas diría que tiene?" Variable de razón (0 a 130
+  amistades).
+
+## Estrategia de análisis
+
+Se estimó un modelo de regresión lineal múltiple jerárquica en tres etapas secuenciales, lo que permite rastrear la robustez de los predictores y capturar dinámicas de mediación o espuriedad entre dimensiones: (1) modelo con predictores económicos, (2) modelo que agrega los predictores de salud,
+y (3) modelo completo que agrega el predictor relacional. Previamente, se reportan estadísticos descriptivos univariados y correlaciones de Pearson
+bivariadas entre cada predictor y el IBS, interpretando los tamaños del efecto según el criterio de Cohen [@cohen1988].

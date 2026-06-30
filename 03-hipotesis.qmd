@@ -1,5 +1,35 @@
-﻿---
-title: "Hipótesis"
----
+﻿# Hipótesis {#sec-hipotesis}
 
-Hipótesis de investigación. Deben ser pre-registradas.
+A partir del modelo teórico presentado en el capítulo anterior, se formulan las siguientes cinco hipótesis de investigación, donde IBS es el Índice de Bienestar Subjetivo:
+
+$$IBS = \beta_0 + \beta_1 \cdot ss6 + \beta_2 \cdot yy2 + \beta_3 \cdot yy3 + \beta_4 \cdot ss1 + \beta_5 \cdot rr1 + \varepsilon$$
+
+**H1.** Una mayor protección financiera en salud (`ss6`) se asociará positivamente con el IBS. Frente a un problema de salud, sentirse protegido financieramente reduce la incertidumbre y permite a las personas mayores mantener su autonomía, lo que favorece una evaluación más positiva de su bienestar.
+
+**H2.** Una mayor capacidad del hogar para llegar a fin de mes (`yy2`) se asociará positivamente con el IBS. La facilidad para cubrir los gastos mensuales reduce la presión económica cotidiana y constituye una condición estructural que habilita experiencias de vida más satisfactorias.
+
+**H3.** Un mayor ingreso subjetivo necesario (`yy3`) se asociará negativamente con el IBS. Quienes reportan necesitar más ingresos para cubrir las necesidades del hogar probablemente perciben una brecha mayor entre sus recursos actuales y sus expectativas o necesidades reales, lo que afecta negativamente su evaluación de bienestar.
+
+**H4.** Un mejor estado de salud autopercibido (`ss1`) se asociará positivamente con el IBS. La salud incide directamente en la autonomía funcional y en la experiencia cotidiana de las personas mayores, por lo que su deterioro limita la capacidad de participar en actividades significativas y compromete la evaluación subjetiva del bienestar.
+
+**H5.** Un mayor tamaño de la red de apoyo social (`rr1`) se asociará positivamente con el IBS. Contar con más amistades cercanas a quienes se puede pedir ayuda constituye un recurso relacional estructural que refleja el grado de integración social de las personas mayores, contribuyendo a una evaluación más positiva de su existencia.
+
+## Estado de preregistro {#sec-protocolo}
+
+::: {.callout-important}
+## Nota de transparencia metodológica
+
+Las cinco hipótesis anteriores fueron especificadas a priori en el marco de un trabajo del curso de Estadística Multivariada, **antes** de la estimación de los modelos de regresión reportados en este documento. Este reporte formaliza dicho análisis bajo prácticas de ciencia abierta y deja
+registrado el protocolo, las hipótesis y los materiales relevantes en el
+Open Science Framework (OSF): **[enlace al proyecto OSF — completar]**.
+
+Es importante señalar, sin embargo, que al momento de redactar este
+preregistro los datos ya habían sido explorados y los modelos ya habían
+sido estimados en el trabajo de curso original. Por lo tanto, **este no es
+un preregistro confirmatorio en sentido estricto** —en el cual las
+hipótesis se fijan y se hacen públicas antes de tener cualquier contacto
+con los datos—, sino una reformulación documentada y transparente de un
+análisis preexistente. Se declara esta condición explícitamente para no
+sobrerrepresentar el carácter confirmatorio del estudio, siguiendo el
+principio de que la transparencia sobre el proceso de investigación es tan relevante como sus resultados.
+:::
