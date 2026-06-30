@@ -1,4 +1,7 @@
-# Antecedentes {#sec-antecedentes}
+---
+numbered: true
+title: Antecedentes
+---
 
 ## Bienestar subjetivo y desigualdad estructural en América Latina
 

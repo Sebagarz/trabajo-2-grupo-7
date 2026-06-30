@@ -1,4 +1,7 @@
-﻿# Hipótesis {#sec-hipotesis}
+﻿---
+numbered: true
+title: Hipótesis
+---
 
 A partir del modelo teórico presentado en el capítulo anterior, se formulan las siguientes cinco hipótesis de investigación, donde IBS es el Índice de Bienestar Subjetivo:
 
@@ -14,12 +17,14 @@ $$IBS = \beta_0 + \beta_1 \cdot ss6 + \beta_2 \cdot yy2 + \beta_3 \cdot yy3 + \b
 
 **H5.** Un mayor tamaño de la red de apoyo social (`rr1`) se asociará positivamente con el IBS. Contar con más amistades cercanas a quienes se puede pedir ayuda constituye un recurso relacional estructural que refleja el grado de integración social de las personas mayores, contribuyendo a una evaluación más positiva de su existencia.
 
-## Estado de preregistro {#sec-protocolo}
+## Estado de preregistro 
 
-::: {.callout-important}
-## Nota de transparencia metodológica
+::: {.callout-important title="Nota de transparencia metodológica"}
 
-Las cinco hipótesis anteriores fueron especificadas a priori en el marco de un trabajo del curso de Estadística Multivariada, **antes** de la estimación de los modelos de regresión reportados en este documento. Este reporte formaliza dicho análisis bajo prácticas de ciencia abierta y deja
+Las cinco hipótesis anteriores fueron especificadas a priori en el marco de
+un trabajo del curso de Estadística Multivariada, **antes** de la
+estimación de los modelos de regresión reportados en este documento. Este
+reporte formaliza dicho análisis bajo prácticas de ciencia abierta y deja
 registrado el protocolo, las hipótesis y los materiales relevantes en el
 Open Science Framework (OSF): **[enlace al proyecto OSF — completar]**.
 
@@ -31,5 +36,7 @@ hipótesis se fijan y se hacen públicas antes de tener cualquier contacto
 con los datos—, sino una reformulación documentada y transparente de un
 análisis preexistente. Se declara esta condición explícitamente para no
 sobrerrepresentar el carácter confirmatorio del estudio, siguiendo el
-principio de que la transparencia sobre el proceso de investigación es tan relevante como sus resultados.
+principio de que la transparencia sobre el proceso de investigación es tan
+relevante como sus resultados.
 :::
+

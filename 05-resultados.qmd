@@ -1,4 +1,5 @@
 ﻿---
-title: "Resultados"
+numbered: true
+title: Resultados
 ---
 Interpreta resultados, limitaciones y aportes.

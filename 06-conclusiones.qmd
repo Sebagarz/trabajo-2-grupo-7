@@ -1,4 +1,5 @@
 ﻿---
-title: "Conclusiones"
+numbered: true
+title: Conclusiones
 ---
 Síntesis y proyecciones futuras.

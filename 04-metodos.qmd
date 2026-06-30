@@ -1,4 +1,7 @@
-﻿# Métodos {#sec-metodos}
+﻿---
+numbered: true
+title: Métodos
+---
 
 ## Datos abiertos
 
@@ -19,7 +22,7 @@ La presente investigación utiliza la Encuesta de Bienestar Social (EBS) 2023, d
 
 La base original está compuesta por 11.234 casos. De esta, se extrajo una submuestra intencionada de personas entre 60 y 79 años mediante la filtración de la variable `tramoebs2 == 4` (módulo de caracterización, "Tramos de edad"), obteniendo 3.170 observaciones. Tras aplicar un enfoque de casos completos (*listwise deletion*) sobre las variables del modelo, la muestra final de análisis quedó constituida por 2.994 observaciones.
 
-## Protocolo de investigación (estructura IPO)
+## Protocolo de investigación (estructura IPO) 
 
 ### Entrada (Input)
 

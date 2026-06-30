@@ -1,8 +1,7 @@
 ﻿---
 numbered: true
+title: Introducción 
 ---
-
-# Introducción {#sec-introduccion}
 
 ## Motivación
 
@@ -32,4 +31,5 @@ Este reporte contribuye de dos formas. Sustantivamente, ofrece evidencia empíri
 
 ## Estructura del documento
 
-El capítulo de **Antecedentes** (@sec-antecedentes) presenta el respaldo teórico que orienta la selección de dimensiones y variables. El **Hipótesis** (@sec-hipotesis) formula las hipótesis de investigación y su estado de preregistro. El @sec-metodos describe los datos, las variables y el protocolo de investigación bajo la estructura IPO. El @sec-resultados reporta los resultados univariados, bivariados y del modelo de regresión jerárquica. Finalmente, el @sec-conclusiones discute los hallazgos, sus alcances y sus límites, incluyendo las consideraciones propias de adaptar un trabajo de curso a un proyecto de ciencia abierta.
+El capítulo [**Antecedentes**](02-antecedentes.html) presenta el respaldo teórico que orienta la selección de dimensiones y variables. El capítulo [**Hipótesis**](03-hipotesis.html#sec-hipotesis) formula las hipótesis de investigación y su estado de preregistro. El capítulo [**Métodos**](03-metodos.html#sec-metodos) describe los datos, las variables y el protocolo de investigación bajo la estructura IPO. El capítulo [**Resultados**](03-resultados.html#sec-resultados) reporta los resultados univariados, bivariados y del modelo de regresión jerárquica. Finalmente, El capítulo [**Conclusiones**](03-conclusiones.html#sec-conclusiones) discute los hallazgos, sus alcances y sus límites, incluyendo las consideraciones propias de adaptar un trabajo de curso a un proyecto de ciencia abierta.
+
