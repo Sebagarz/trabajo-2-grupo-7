@@ -90,5 +90,15 @@
       "Apéndices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Tablas adicionales</span>"
     ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Título del trabajo",
+    "section": "",
+    "text": "Palabras clave: Ciencia Social Abierta\n\nAbstract",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Abstract</span>"
+    ]
   }
 ]
