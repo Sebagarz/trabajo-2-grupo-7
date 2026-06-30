@@ -168,5 +168,38 @@
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Abstract</span>"
     ]
+  },
+  {
+    "objectID": "apendices/A-encuestas.html",
+    "href": "apendices/A-encuestas.html",
+    "title": "Anexo A - Instrumentos de levantamiento",
+    "section": "",
+    "text": "Este anexo incluye los ítems originales del cuestionario de la Encuesta de Bienestar Social (EBS) 2023 utilizados para construir el Índice de Bienestar Subjetivo (IBS) y sus predictores.\n\n\n\n\n\n\n\n\nVariable\nÍtem original\nCategorías\n\n\n\n\na1\n“¿Qué tan satisfecho(a) o insatisfecho(a) se encuentra con su vida?”\n1 (totalmente insatisfecho) a 5 (totalmente satisfecho)\n\n\na2_a\n“¿Cuán feliz se sintió ayer?”\n1 (nada) a 5 (muy)\n\n\na2_b\n“¿Cuán tranquilo(a) se sintió ayer?”\n1 (nada) a 5 (muy)\n\n\na12\n“¿Qué tan satisfecho(a) está con sus relaciones personales con familiares, amigos, etc.?”\n1 (totalmente insatisfecho) a 5 (totalmente satisfecho)\n\n\nss6\n“Frente a un problema de salud ¿cuán protegido(a) se siente financieramente?”\n1 (muy desprotegido) a 5 (muy protegido)\n\n\nyy2\n“¿Su hogar puede llegar a fin de mes…?”\n1 (con mucha dificultad) a 5 (con mucha facilidad)\n\n\nyy3\n“¿De cuánto sería un ingreso para cubrir todas las necesidades por un mes?”\nMontos entre $60.000 y $14.000.000 pesos chilenos\n\n\nss1\n“¿Cómo es su estado de salud actual?”\n1 (muy malo) a 5 (muy bueno)\n\n\nrr1\n“Amistades cercanas para pedir ayuda, ¿cuántas diría que tiene?”\n0 a 130\n\n\n\nEl cuestionario completo y el libro de códigos de la EBS 2023 están disponibles públicamente en el sitio del Observatorio Social del Ministerio de Desarrollo Social y Familia.",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Instrumentos de levantamiento</span>"
+    ]
+  },
+  {
+    "objectID": "apendices/B-tablas.html",
+    "href": "apendices/B-tablas.html",
+    "title": "Anexo B - Tablas adicionales",
+    "section": "",
+    "text": "B.1 Matriz de correlaciones bivariadas\nAgregar la tabla de ejemplo\nNota: tabla de ejemplo con los coeficientes reportados en el capítulo de resultados. La matriz completa de correlaciones cruzadas entre predictores se genera en procesamiento/analisis.qmd y puede agregarse aquí al re-ejecutar el análisis con la base de datos completa.",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Tablas adicionales</span>"
+    ]
+  },
+  {
+    "objectID": "apendices/B-tablas.html#registro-de-cambios-respecto-al-análisis-original",
+    "href": "apendices/B-tablas.html#registro-de-cambios-respecto-al-análisis-original",
+    "title": "Anexo B - Tablas adicionales",
+    "section": "B.2 Registro de cambios respecto al análisis original",
+    "text": "B.2 Registro de cambios respecto al análisis original\nEste reporte se basa en un análisis desarrollado originalmente en el curso de Estadística Multivariada. Para efectos de transparencia, se documentan aquí los principales cambios incorporados al adaptarlo como proyecto de ciencia social abierta:\n\nSe mantienen las cinco hipótesis y la especificación del modelo de regresión jerárquica originales.\nSe formaliza el protocolo de investigación bajo estructura IPO explícita (ver Hipótesis).\nSe documenta el origen, licencia y forma de acceso a los datos.\nSe incorpora una nota de transparencia sobre el estado no estrictamente confirmatorio del preregistro (ver Estado del protocolo).",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Tablas adicionales</span>"
+    ]
   }
 ]
