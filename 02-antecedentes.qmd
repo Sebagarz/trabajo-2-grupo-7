@@ -1,5 +1,28 @@
----
-title: "Antecedentes"
----
+# Antecedentes {#sec-antecedentes}
 
-Respaldo teórico y empírico de la investigación
+## Bienestar subjetivo y desigualdad estructural en América Latina
+
+Desde una perspectiva histórico-sociológica latinoamericana, el estudio del bienestar subjetivo dialoga con tradiciones críticas que han cuestionado los modelos de desarrollo centrados exclusivamente en el crecimiento económico. Durante la segunda mitad del siglo XX, la sociología en América Latina desarrolló marcos analíticos que problematizaron la modernización y la desigualdad, enfatizando cómo los procesos de desarrollo reproducen relaciones de dependencia y exclusión [@morales2016]. En esta línea, autores como Aníbal Quijano evidenciaron que las estructuras de poder heredadas del colonialismo continúan moldeando las condiciones de vida en la región, reproduciendo exclusión y precariedad para amplios sectores de la población [@cortes2017]. Estos antecedentes permiten situar el bienestar subjetivo no solo como una evaluación individual, sino como una experiencia atravesada por desigualdades históricas y estructurales.
+
+## Marcos teóricos sobre bienestar y adaptación en la vejez
+
+Para abordar esta complejidad, el presente estudio articula enfoques sociológicos con modelos provenientes de la enfermería. La teoría del devenir humano (*humanbecoming*) de Rosemarie Rizzo Parse busca comprender el bienestar como una experiencia vivida, donde las personas construyen el significado de su vida a partir de sus relaciones, emociones y evaluaciones personales [@vilchez2013]. El modelo de adaptación de Callista Roy, por su parte, incorpora una dimensión estructural al análisis, entendiendo a las personas como sistemas que deben adaptarse a condiciones cambiantes en distintos ámbitos [@ursavas2014].
+
+La articulación de ambos modelos permite comprender el bienestar subjetivo
+como una expresión de cómo los individuos interpretan su existencia en
+interacción con procesos de adaptación frente a estímulos tanto
+internos —fisiológicos— como externos —el rol social y la
+interdependencia—. En consecuencia, las dimensiones consideradas en este
+estudio —satisfacción con la vida, felicidad, tranquilidad y relaciones
+sociales— no solo representan indicadores del bienestar subjetivo, sino
+expresiones directas de la experiencia vivida que permiten analizar cómo
+variables estructurales —condiciones económicas, estado de salud y redes
+de apoyo social— inciden en dicha construcción subjetiva [@farfan2021].
+
+## El Índice de Bienestar Subjetivo (IBS) y sus dimensiones
+
+A partir de esta articulación teórica, el bienestar subjetivo se operacionaliza mediante el Índice de Bienestar Subjetivo (IBS), que sintetiza cómo las personas evalúan su propia existencia integrando satisfacción vital, felicidad, tranquilidad y calidad de las relaciones. Este índice se compone a partir de tres dimensiones estructurales: económica, de salud y relacional, las cuales corresponden tanto a condiciones que inciden en la capacidad de las personas mayores para adaptarse a su entorno como en la forma en que construyen el significado de
+su vida.
+
+Las personas mayores enfrentan particularidades que justifican estudiar este fenómeno en este grupo etario específico: la disminución de ingresos, el deterioro progresivo de la salud y la reconfiguración de las redes sociales [@leiva2020]. El estudio se delimita al tramo de 60 a 79 años, excluyendo a personas de 80 años o más, dado que en esta última etapa existe mayor prevalencia de dependencia funcional y deterioro cognitivo que puede
+comprometer la validez de las medidas de autorreporte utilizadas [@felmer2023].
