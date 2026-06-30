@@ -4,12 +4,12 @@
 aproximación sociológica desde condiciones estructurales y experiencias de
 vida.
 
-**Equipo:** Catalina Parra A., Eduardo Ortiz A., [NOMBRE 3] — Departamento de
+**Equipo:** Catalina Parra A., Eduardo Ortiz A., Juan Sebastían García— Departamento de
 Sociología, Universidad de Chile.
 
 **Curso:** Ciencia Social Abierta, Juan Castillo V., 30/06/2026.
 
-**Fecha de este registro:** [COMPLETAR AL SUBIR A OSF]
+**Fecha de este registro:** 30/06/2026
 
 ---
 
