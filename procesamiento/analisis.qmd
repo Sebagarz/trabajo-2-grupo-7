@@ -1,0 +1,123 @@
+---
+title: "Análisis"
+subtitle: "Estadística descriptiva, correlaciones y regresión lineal jerárquica"
+---
+
+Este script toma como entrada la base procesada en `preparacion.qmd`
+(`input/data-proc/base_ebs_limpia.Rdata`) y ejecuta el análisis univariado,
+bivariado y multivariado reportado en `05-resultados.qmd`. Las tablas y
+figuras finales se exportan a `output/tables/` y `output/graphs/`.
+
+```{r}
+#| label: librerias
+#| message: false
+#| warning: false
+
+library(pacman)
+pacman::p_load(tidyverse, psych, sjPlot, broom, knitr, kableExtra, stargazer)
+options(scipen = 999)
+```
+
+```{r}
+#| label: cargar-base
+#| eval: false
+
+EBS <- readRDS("input/data-proc/base_ebs_limpia.Rdata")
+```
+
+## Análisis univariado
+
+```{r}
+#| label: univariado
+#| eval: false
+
+describe(EBS$bienestar_subjetivo)
+describe(EBS$ss6)
+describe(EBS$yy2)
+describe(EBS$ss1)
+describe(EBS$yy3)
+describe(EBS$rr1)
+```
+
+## Análisis bivariado
+
+Correlaciones de Pearson entre el IBS y cada predictor.
+
+```{r}
+#| label: bivariado
+#| eval: false
+
+cor.test(EBS$bienestar_subjetivo, EBS$ss1, method = "pearson")
+cor.test(EBS$bienestar_subjetivo, EBS$yy2, method = "pearson")
+cor.test(EBS$bienestar_subjetivo, EBS$ss6, method = "pearson")
+cor.test(EBS$bienestar_subjetivo, EBS$rr1, method = "pearson")
+cor.test(EBS$bienestar_subjetivo, EBS$yy3, method = "pearson")
+
+matriz_correlacion <- cor(
+  EBS[c("bienestar_subjetivo", "ss6", "yy2", "ss1", "yy3", "rr1")],
+  use = "complete.obs"
+)
+round(matriz_correlacion, 2)
+```
+
+## Regresión lineal jerárquica
+
+La variable de ingresos deseados (`yy3`) se reescala a millones de pesos
+chilenos para obtener coeficientes interpretables.
+
+```{r}
+#| label: reescalado
+#| eval: false
+
+EBS$yy3_millones <- EBS$yy3 / 1000000
+```
+
+```{r}
+#| label: modelos
+#| eval: false
+
+# Modelo 1: dimensión económica
+model1 <- lm(bienestar_subjetivo ~ yy2 + yy3_millones, data = EBS)
+summary(model1)
+
+# Modelo 2: dimensión económica + salud
+model2 <- lm(bienestar_subjetivo ~ yy2 + yy3_millones + ss1 + ss6, data = EBS)
+summary(model2)
+
+# Modelo 3: modelo completo (económica + salud + relacional)
+model3 <- lm(bienestar_subjetivo ~ yy2 + yy3_millones + ss1 + ss6 + rr1, data = EBS)
+summary(model3)
+```
+
+## Coeficientes estandarizados
+
+```{r}
+#| label: coef-estandarizados
+#| eval: false
+
+obtener_coef_estandarizados <- function(model) {
+  coef <- model$coefficients[-1]
+  sd_ <- sapply(model$model, sd)
+  sd_ind <- sd_[-1]
+  sd_dep <- sd_[1]
+  coef_estandarizados <- coef * sd_ind / sd_dep
+  return(coef_estandarizados)
+}
+
+obtener_coef_estandarizados(model3)
+```
+
+## Exportar tablas para los capítulos del libro
+
+```{r}
+#| label: exportar
+#| eval: false
+dir.create("output/tables", recursive = TRUE, showWarnings = FALSE)
+
+stargazer(
+  model1, model2, model3,
+  type = "html",
+  out = "output/tables/modelos-regresion.html",
+  title = "Modelos de regresión jerárquica sobre el Índice de Bienestar Subjetivo"
+)
+```

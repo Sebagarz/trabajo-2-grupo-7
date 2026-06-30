@@ -1,4 +1,40 @@
 ﻿---
-title: "Conclusiones"
+numbered: true
+title: Conclusiones
 ---
-Síntesis y proyecciones futuras.
+## Síntesis de hallazgos
+
+Los hallazgos de este reporte ofrecen evidencia empírica sobre la vejez en
+Chile: el bienestar subjetivo de las personas de 60 a 79 años no depende
+principalmente de metas económicas abstractas, sino de su salud
+físico-emocional y de la percepción cualitativa que tienen sobre su
+estabilidad material. Al integrar secuencialmente las dimensiones del
+modelo jerárquico, las aspiraciones monetarias brutas (`yy3`) pierden toda
+significancia estadística en el modelo completo, mientras que la salud
+percibida se consolida como el predictor más robusto, seguida de la
+holgura financiera percibida, la protección financiera ante contingencias
+médicas y el capital social en amistades cercanas.
+
+A la luz de los marcos conceptuales presentados en los antecedentes, estos
+resultados dialogan con la articulación entre la teoría del devenir humano
+de Rosemarie Rizzo Parse y el modelo de adaptación de Callista Roy. Desde
+la perspectiva de Roy, las personas mayores operan como sistemas que deben
+adaptarse a estímulos internos y externos cambiantes, lo cual se refleja en
+la robustez de la salud y la protección financiera como predictores. Desde
+los postulados de Rizzo Parse, el significado que los sujetos otorgan a su
+existencia se moldea desde sus certezas cotidianas, lo que explica que la
+capacidad de llegar a fin de mes retenga peso predictivo mientras el
+ingreso idealizado lo pierde: el bienestar se construye desde la
+experiencia vivida y la reducción de la incertidumbre inmediata, no desde
+la acumulación abstracta de riqueza. Este patrón es consistente con la
+advertencia del PNUD [@pnud2013] de que en Chile el bienestar está
+profundamente atravesado por las posiciones que las personas ocupan en un
+entramado social marcado por la desigualdad estructural.
+
+## Proyecciones futuras
+
+Como proyección, sería valioso extender este análisis con datos
+longitudinales (p. ej., paneles de la EBS en años sucesivos) para evaluar
+la dirección causal entre salud y bienestar subjetivo, e incorporar
+medidas más finas de autonomía funcional y de tipos de apoyo social, en
+línea con las limitaciones teóricas señaladas.

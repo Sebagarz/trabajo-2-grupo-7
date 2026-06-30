@@ -1,0 +1,134 @@
+---
+title: "Preparación de datos"
+subtitle: "Recodificaciones y construcción de índices — EBS 2023"
+---
+
+Este script documenta el procesamiento de la Encuesta de Bienestar Social (EBS) 2023 desde la base original hasta la base analítica utilizada en el proyecto. Sigue el protocolo IPO descrito en `04-metodos.qmd`: toma como **entrada** los datos crudos depositados en `input/data-orig/`, aplica el **proceso** de selección, recodificación y construcción de índices, y escribe como **salida** la base limpia en `input/data-proc/`.
+
+## Cargar librerías
+
+```{r}
+#| label: librerias
+#| message: false
+#| warning: false
+
+library(pacman)
+pacman::p_load(
+  tidyverse,    # manipulación de datos
+  haven,        # lectura de .RData/.sav
+  psych,        # Alfa de Cronbach, describe()
+  sjPlot,       # tablas
+  confintr,     # intervalos de confianza
+  broom,        # ordenar resultados de modelos
+  sjmisc,       # descriptivos
+  knitr,
+  kableExtra,
+  summarytools, # dfSummary()
+  stargazer,
+  janitor
+)
+
+options(scipen = 999) # desactivar notación científica
+```
+
+## Cargar base de datos original
+
+La base original debe ubicarse en `input/data-orig/EBS_2023.RData`. Ver
+`input/README.md` para instrucciones de descarga desde el sitio del
+Ministerio de Desarrollo Social y Familia.
+
+```{r}
+#| label: cargar-datos
+#| eval: false
+
+load("input/data-orig/EBS_2023.RData")
+EBS <- EBS_2023_vp
+```
+
+## Selección de variables y filtro por edad
+
+Se seleccionan únicamente las variables necesarias para construir el Índice
+de Bienestar Subjetivo (IBS) y sus predictores, y se filtra el tramo etario
+de interés (60 a 79 años, `tramoebs2 == 4`).
+
+```{r}
+#| label: seleccion-filtro
+#| eval: false
+
+EBS <- EBS %>%
+  select(a1, a2_a, a12, a2_b, ss6, yy2, yy3, ss1, rr1, tramoebs2) %>%
+  filter(tramoebs2 == 4)
+```
+
+## Tratamiento de valores perdidos
+
+Los códigos de no respuesta (-77 a -99) se recodifican como `NA` y luego se
+elimina por lista (*listwise deletion*) cualquier caso incompleto.
+
+```{r}
+#| label: na-tratamiento
+#| eval: false
+
+EBS <- EBS %>%
+  mutate(across(everything(), ~ replace(
+    ., . %in% c(-81, -82, -83, -84, -85, -86, -88, -89, -99, -77), NA
+  )))
+
+colSums(is.na(EBS)) # verificación de pérdidos por variable
+
+EBS <- na.omit(EBS)
+```
+
+## Construcción del Índice de Bienestar Subjetivo (IBS)
+
+El IBS se construye como el promedio de cuatro ítems tipo Likert (1-5):
+satisfacción con la vida (`a1`), felicidad (`a2_a`), tranquilidad (`a2_b`) y
+satisfacción con las relaciones (`a12`). Antes de promediar, se evalúa la
+consistencia interna con Alfa de Cronbach.
+
+```{r}
+#| label: alfa-cronbach
+#| eval: false
+
+objeto_alpha <- psych::alpha(EBS[, c("a1", "a2_a", "a12", "a2_b")])
+print(objeto_alpha) # alfa = 0.71
+
+summary(EBS[, c("a1", "a2_a", "a2_b", "a12")])
+
+EBS <- EBS %>%
+  mutate(
+    bienestar_subjetivo = rowMeans(across(c(a1, a2_a, a2_b, a12)), na.rm = TRUE)
+  )
+```
+
+## Recodificación de predictores ordinales a variables dummy
+
+Para facilitar la interpretación sustantiva de los coeficientes, las
+variables ordinales de salud (`ss1`), capacidad de llegar a fin de mes
+(`yy2`) y protección financiera en salud (`ss6`) se recodifican como dummy
+(0 = categoría desfavorable, 1 = categoría favorable).
+
+```{r}
+#| label: recodificacion-dummy
+#| eval: false
+
+EBS <- EBS %>%
+  mutate(
+    ss1 = case_when(ss1 %in% c(4, 5) ~ 1, !is.na(ss1) ~ 0),
+    yy2 = case_when(yy2 %in% c(4, 5) ~ 1, !is.na(yy2) ~ 0),
+    ss6 = case_when(ss6 %in% c(4, 5) ~ 1, !is.na(ss6) ~ 0)
+  )
+```
+
+## Guardar base de datos procesada
+
+```{r}
+#| label: guardar
+#| eval: false
+
+saveRDS(EBS, file = "input/data-proc/base_ebs_limpia.Rdata")
+```
+
+La base final de análisis queda compuesta por las observaciones que superan
+el filtro de edad y el tratamiento de casos completos descrito en
+`04-metodos.qmd`.

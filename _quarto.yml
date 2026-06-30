@@ -8,18 +8,18 @@ project:
     - assets/favicon-2025-20251031.svg  # Asegura que el favicon versionado llegue a docs/
 
 book:
-  title: Título del trabajo
+  title: Bienestar subjetivo en personas mayores chilenas. Una aproximación sociológica desde condiciones estructurales y experiencias de vida
   subtitle: Trabajo final
   output-file: reportes-facso-plantilla
   repo-url: https://github.com/KAravena/reportesfacsobook_template  #URL del repositorio del libro (cambia segun tu repo)
   author:
-    - name: Nombre Apellido
+    - name: Catalina Parra Arancibia
       affiliation: Departamento de Sociologia, Universidad de Chile
       orcid: 0000-0000-0000-0000
-    - name: Nombre Apellido
+    - name: Eduardo Ortiz Améstica
       affiliation: Departamento de Sociologia, Universidad de Chile
       orcid: 0000-0000-0000-0000
-    - name: Nombre Apellido
+    - name: xxx
       affiliation: Departamento de Sociologia, Universidad de Chile
       orcid: 0000-0000-0000-0000
   date: today              # Usa fecha fija (YYYY-MM-DD) si necesitas control editorial
@@ -118,6 +118,7 @@ lang: es
 crossref:
   appendix-title: Anexo
   appendix-delim: " - "
+  chapters: true
 
 metadata-files:
   - _metadata.yml               # Ajustes adicionales (palabras clave, portada, etc.)

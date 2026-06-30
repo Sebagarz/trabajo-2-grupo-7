@@ -1,8 +1,14 @@
 # Carpeta `output`
 
-Contiene artefactos derivados del procesamiento y analisis.
+Artefactos derivados del procesamiento y análisis ejecutado en
+`procesamiento/`.
 
-- `graphs/`: graficos listos para uso en el informe o presentaciones.
-- `tables/`: tablas formateadas (CSV, HTML, LaTeX) listas para insertar en los capitulos.
+- `graphs/`: figuras (p. ej. diagrama del modelo teórico, gráficos de
+  distribución) listas para usar en los capítulos del libro.
+- `tables/`: tablas formateadas, en particular
+  `modelos-regresion.html` con los tres modelos de regresión jerárquica
+  generados por `procesamiento/analisis.qmd`.
 
-Nombra los archivos con fechas o versiones (`AAAA-MM-DD-descripcion.ext`) para facilitar el seguimiento.
+Estos archivos se regeneran al ejecutar `procesamiento/preparacion.qmd` y
+`procesamiento/analisis.qmd` sobre la base original (ver `input/README.md`).
+

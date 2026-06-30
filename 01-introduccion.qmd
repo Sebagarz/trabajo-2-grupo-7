@@ -1,9 +1,35 @@
 ﻿---
-title: "Introducción"
 numbered: true
+title: Introducción 
 ---
 
-El estudio del bienestar subjetivo ha adquirido una progresiva centralidad en las ciencias sociales contemporáneas, consolidándose como un enfoque crítico frente a las aproximaciones tradicionales que reducían la calidad de vida a indicadores estrictamente macroeconómicos o de consumo material. Como señalan Díaz et al. (2018), el bienestar subjetivo constituye una evaluación integral y multidimensional sobre "lo que las personas piensan y sienten acerca de sus vidas y las conclusiones cognoscitivas y afectivas que alcanzan cuando evalúan su existencia". Este constructo no opera de manera aislada en el vacío individual; por el contrario, en sociedades caracterizadas por marcadas brechas de equidad como la chilena, la experiencia del bienestar se encuentra profundamente moldeada por las coordenadas de la estructura social, las trayectorias de curso de vida y las posiciones relativas que los sujetos ocupan en el entramado institucional (PNUD, 2013).
+## Motivación
 
-Bajo estas premisas, el presente reporte abierto tiene como objetivo evaluar el impacto simultáneo de determinantes económicos, sanitarios y relacionales sobre el Índice de Bienestar Subjetivo (IBS) en las personas mayores chilenas, utilizando los datos de la Encuesta de Bienestar Social (EBS) 2023. Para asegurar que este conocimiento sea auditable y democrático, la investigación se inscribe rigurosamente bajo los principios de la Ciencia Abierta, desplegando un flujo de trabajo reproducible estructurado bajo el protocolo IPO (Input-Process-Output) y pre-registrado en la plataforma Open Science Framework (OSF).
-Para guiar al lector en la revisión de este proceso reproducible, este Quarto Book se estructura en secciones lógicas independientes. Posterior a este marco introductorio, el segundo capítulo profundiza en los Antecedentes teóricos e históricos que sustentan el fenómeno. El tercer apartado formaliza las Hipótesis y el diseño del pre-registro analítico. A continuación, la sección de Métodos detalla el procesamiento de la submuestra de 2.994 observaciones y la operacionalización de las variables en R. Finalmente, los capítulos de Resultados y Conclusiones exponen los rendimientos de la modelación multivariada jerárquica y discuten los alcances del proyecto de cara a las políticas públicas de vejez en el país.
+El estudio del bienestar subjetivo ha adquirido una creciente relevancia en las ciencias sociales contemporáneas, consolidándose como un enfoque crítico frente a las aproximaciones tradicionales que reducían la calidad de vida a indicadores estrictamente macroeconómicos o de consumo material. Como señalan @diaz2018, el bienestar subjetivo constituye una evaluación integral y multidimensional sobre lo que las personas piensen y sienten acerca de sus vidas y las conclusiones cognitivas y afectivas que alcanzan cuando evalúan su existencia. Este constructo no opera de manera aislada en el vacío individual; por el contrario, en sociedades caracterizadas por marcadas brechas de equidad como la chilena, la experiencia del bienestar se encuentra profundamente moldeada por las coordenadas de la estructura social, las trayectorias de curso de vida y las posiciones relativas que los sujetos ocupan en el entramado social [@pnud2013].
+
+Desde el pensamiento histórico-sociológico latinoamericano, esta problematización conecta con las corrientes críticas que cuestionaron los paradigmas lineales de desarrollo y modernización durante la segunda mitad del siglo XX. Autores como Aníbal Quijano evidenciaron cómo las estructuras de poder de raíz colonial perpetúan dinámicas de exclusión y precariedad que condicionan material y simbólicamente la existencia de amplios sectores de la región [@cortes2017]. Bajo este prisma, la evaluación que un individuo realiza sobre su vida se revela como un fenómeno sociológico atravesado por determinantes históricos y estructurales, y no solo por atributos individuales.
+
+Esta aproximación adquiere especial relevancia al focalizarse en las personas mayores de 60 a 79 años, quienes experimentan transiciones críticas como el cese de la vida laboral activa, la reconfiguración de los ingresos, el deterioro progresivo de la salud y la vulnerabilidad de las redes de apoyo social [@leiva2020]. Para capturar esta complejidad, el presente estudio articula la teoría sociológica con dos marcos provenientes de las ciencias del cuidado: el modelo de adaptación de Callista Roy, que concibe a los sujetos como sistemas que responden a estímulos internos —fisiológicos y psicológicos— y externos —roles sociales e interdependencia institucional— [@ursavas2014]; y la teoría del devenir humano de Rosemarie Rizzo Parse que sitúa el bienestar en la experiencia vivida y en cómo las personas co-construyen activamente el significado de su existencia [@vilchez2013]. La confluencia de ambas perspectivas permiten operacionalizar el bienestar subjetivo no como un estado estático, sino como el resultado de procesos de ajuste ante condiciones estructurales de existencia.
+
+## Pregunta y objetivos de investigación
+
+**Pregunta de investigación:** ¿En qué medida las condiciones económicas, de salud y relacionales se asocian con el bienestar subjetivo de las personas mayores chilenas (60 a 79 años)?
+
+**Objetivo general:** Examinar la asociación entre condiciones estructurales —económicas, de salud y relacionales— y el bienestar subjetivo de las
+personas mayores en Chile, a partir de datos de la Encuesta de Bienestar Social (EBS) 2023.
+
+**Objetivos específicos:**
+
+1. Describir la distribución del Índice de Bienestar Subjetivo (IBS) y de sus predictores en la población de 60 a 79 años.
+2. Estimar la asociación bivariada entre cada predictor y el IBS.
+3. Evaluar, mediante un modelo de regresión jerárquica, el aporte relativo y la robustez de las dimensiones económica, de salud y relacional sobre el IBS,   identificando posibles procesos de mediación o espuriedad.
+4. Discutir los hallazgos a la luz de los marcos teóricos sobre adaptación y experiencia vivida en la vejez.
+
+## Contribución esperada
+
+Este reporte contribuye de dos formas. Sustantivamente, ofrece evidencia empírica sobre los determinantes del bienestar subjetivo en la vejez en un contexto de alta desigualdad estructural, complementando la literatura que ha tratado el bienestar como atributo predominantemente individual. Metodológicamente, formaliza dicho análisis como un proyecto de ciencia abierta —con datos públicos, protocolo documentado, preregistro en OSF e implementación computacional reproducible—, lo que permite a otras personas verificar, reutilizar o extender el análisis aquí presentado.
+
+## Estructura del documento
+
+El capítulo [**Antecedentes**](02-antecedentes.html) presenta el respaldo teórico que orienta la selección de dimensiones y variables. El capítulo [**Hipótesis**](03-hipotesis.html#sec-hipotesis) formula las hipótesis de investigación y su estado de preregistro. El capítulo [**Métodos**](03-metodos.html#sec-metodos) describe los datos, las variables y el protocolo de investigación bajo la estructura IPO. El capítulo [**Resultados**](03-resultados.html#sec-resultados) reporta los resultados univariados, bivariados y del modelo de regresión jerárquica. Finalmente, El capítulo [**Conclusiones**](03-conclusiones.html#sec-conclusiones) discute los hallazgos, sus alcances y sus límites, incluyendo las consideraciones propias de adaptar un trabajo de curso a un proyecto de ciencia abierta.
+

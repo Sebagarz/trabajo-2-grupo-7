@@ -1,0 +1,1157 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  spanish,
+  a4paper,
+  oneside]{scrbook}
+\usepackage{xcolor}
+\usepackage[top=25mm,bottom=25mm,left=30mm,right=20mm]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\ifLuaTeX
+\usepackage[bidi=basic,shorthands=off]{babel}
+\else
+\usepackage[bidi=default,shorthands=off]{babel}
+\fi
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\AtBeginDocument{\hypersetup{linkcolor=black}}
+% ---------- Paquetes tipograficos y microajustes ----------
+\usepackage{microtype}        % mejor interletrado y justificado
+\usepackage{csquotes}         % comillas tipograficas
+\usepackage{iftex}
+\ifPDFTeX\else
+  % Seleccion de fuentes solo cuando XeTeX/LuaTeX esta disponible.
+  \IfFontExistsTF{TeX Gyre Termes}{
+    \setmainfont{TeX Gyre Termes}
+  }{
+    \IfFontExistsTF{Latin Modern Roman}{\setmainfont{Latin Modern Roman}}{}
+  }
+  \IfFontExistsTF{TeX Gyre Heros}{
+    \setsansfont{TeX Gyre Heros}
+  }{
+    \IfFontExistsTF{Latin Modern Sans}{\setsansfont{Latin Modern Sans}}{}
+  }
+  \IfFontExistsTF{TeX Gyre Cursor}{
+    \setmonofont{TeX Gyre Cursor}
+  }{
+    \IfFontExistsTF{Latin Modern Mono}{\setmonofont{Latin Modern Mono}}{}
+  }
+\fi
+\usepackage{enumitem}         % listas compactas
+\setlist{itemsep=.2em, topsep=.2em}
+
+% ---------- KOMA-Script: estilo de titulos y espaciado ----------
+\KOMAoptions{
+  headings=big,
+  parskip=half,
+  fontsize=12pt,
+  appendixprefix=true
+}
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0.6em}
+\usepackage{indentfirst}
+\usepackage{setspace}         % Control del interlineado del documento
+\setstretch{1.5}
+
+% ---------- Encabezados y pies (scrlayer-scrpage) ----------
+\usepackage[automark,headsepline]{scrlayer-scrpage}
+\clearpairofpagestyles
+\automark[chapter]{chapter}
+\ihead{\pagemark}
+\ohead{\itshape\headmark}
+\setheadsepline{0.4pt}
+\renewcommand*{\chaptermarkformat}{}
+\renewcommand*{\chapterpagestyle}{scrheadings}
+\pagestyle{scrheadings}
+\makeatletter
+\let\ps@plain\ps@scrheadings
+\makeatother
+\cfoot{}
+
+% ---------- Hipervinculos mas sobrios ----------
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=[rgb]{0.05,0.2,0.5},
+  urlcolor=[rgb]{0.05,0.2,0.5},
+  pdfauthor={\@author},
+  pdftitle={\@title}
+}
+
+% ---------- Leyendas de figuras/tablas ----------
+\usepackage[labelfont=bf,textfont=it]{caption}
+\captionsetup{
+  skip=8pt
+}
+
+% ---------- Tabla de contenidos ----------
+\KOMAoptions{toc=graduated}
+\RedeclareSectionCommand[tocnumwidth=3em]{chapter}
+\RedeclareSectionCommand[tocindent=3.25em,tocnumwidth=2.8em]{section}
+\RedeclareSectionCommand[tocindent=6.5em,tocnumwidth=2.5em]{subsection}
+\makeatletter
+\newcommand*{\tocdotfill}{\leavevmode\leaders\hbox to .6em{\hss.\hss}\hfill}
+\makeatother
+\RedeclareSectionCommand[toclinefill=\tocdotfill]{chapter}
+\RedeclareSectionCommand[toclinefill=\tocdotfill]{section}
+\RedeclareSectionCommand[toclinefill=\tocdotfill]{subsection}
+\renewcommand*{\contentsname}{Tabla de contenido}
+\setkomafont{chapterentry}{\normalfont}
+\setkomafont{chapterentrypagenumber}{\normalfont}
+
+% ---------- Viudas/Huerfanas y cortes de pagina ----------
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+
+% ---------- Entorno abstract para scrbook ----------
+\providecommand{\abstractname}{Resumen}
+\makeatletter
+\@ifundefined{abstract}{
+  \newenvironment{abstract}{
+    \cleardoublepage
+    \thispagestyle{plain}
+    \null\vfill
+    \begin{center}
+      {\bfseries\Large \abstractname\par}
+    \end{center}\vspace{1em}
+    \begingroup
+  }{
+    \par\endgroup
+    \vfill\null
+    \cleardoublepage
+  }
+}{}
+\makeatother
+
+% ---------- Soporte de subtitulo desde YAML ----------
+\makeatletter
+\providecommand{\subtitle}[1]{\gdef\@subtitle{#1}}
+\providecommand{\@subtitle}{}
+\makeatother
+
+\makeatletter
+\newcommand{\facso@iflist}[4]{%
+  \begingroup
+    \def\addvspace##1{}%
+    \def\numberline##1{##1}%
+    \def\facso@target{#2}%
+    \newcount\facso@entrycount
+    \facso@entrycount=0\relax
+    \long\def\contentsline##1##2##3{%
+      \def\facso@this{##1}%
+      \ifx\facso@this\facso@target
+        \advance\facso@entrycount\@ne
+      \fi
+    }%
+    \InputIfFileExists{\jobname.#1}{}{}%
+  \endgroup
+  \ifnum\facso@entrycount>0\relax
+    #3%
+  \else
+    #4%
+  \fi}
+\renewcommand{\listoffigures}{%
+  \facso@iflist{lof}{figure}{%
+    \cleardoublepage
+    \phantomsection
+    \addchap*{Listado de Figuras}%
+    \thispagestyle{scrheadings}%
+    \markboth{Listado de Figuras}{Listado de Figuras}%
+    \addcontentsline{toc}{chapter}{Listado de Figuras}%
+    \@starttoc{lof}%
+    \cleardoublepage
+    \automark[chapter]{chapter}%
+  }{}}
+\renewcommand{\listoftables}{%
+  \facso@iflist{lot}{table}{%
+    \cleardoublepage
+    \phantomsection
+    \addchap*{Listado de Tablas}%
+    \thispagestyle{scrheadings}%
+    \markboth{Listado de Tablas}{Listado de Tablas}%
+    \addcontentsline{toc}{chapter}{Listado de Tablas}%
+    \@starttoc{lot}%
+    \cleardoublepage
+    \automark[chapter]{chapter}%
+  }{}}
+\makeatother
+
+% --- Desactivar portada y abstract automaticos de Pandoc (PDF) ---
+\AtBeginDocument{\let\maketitle\relax}
+\renewenvironment{abstract}{}{}
+\providecommand{\appendixname}{}
+\providecommand{\appendixtocname}{}
+\providecommand{\appendixpagename}{}
+\renewcommand*{\appendixname}{Anexo}
+\renewcommand*{\appendixtocname}{Anexos}
+\renewcommand*{\appendixpagename}{Anexos}
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Tabla de contenidos}
+\else
+  \newcommand\contentsname{Tabla de contenidos}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{Listado de Figuras}
+\else
+  \newcommand\listfigurename{Listado de Figuras}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{Listado de Tablas}
+\else
+  \newcommand\listtablename{Listado de Tablas}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Lista de figuras}
+\else
+  \newcommand\figurename{Lista de figuras}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Lista de tablas}
+\else
+  \newcommand\tablename{Lista de tablas}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listado}
+\newcommand*\listoflistings{\listof{codelisting}{Listado de Listados}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Bienestar subjetivo en personas mayores chilenas. Una aproximación sociológica desde condiciones estructurales y experiencias de vida},
+  pdfauthor={Catalina Parra Arancibia; Eduardo Ortiz Améstica; xxx},
+  pdflang={es},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Bienestar subjetivo en personas mayores chilenas. Una
+aproximación sociológica desde condiciones estructurales y experiencias
+de vida}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Trabajo final}
+\author{Catalina Parra Arancibia \and Eduardo Ortiz Améstica \and xxx}
+\date{29 de junio de 2026}
+\begin{document}
+\frontmatter
+\maketitle
+
+% --- title-pdf.tex personalizado para portada formal ---
+\makeatletter
+\providecommand{\subtitle}[1]{\gdef\@subtitle{#1}}
+\providecommand{\@subtitle}{}
+\providecommand{\frontmattercontext}{}
+\providecommand{\advisorname}{}
+\providecommand{\advisorlabel}{FACSO}
+\providecommand{\frontmatterlocation}{}
+\InputIfFileExists{includes/cover-config.tex}{}{}
+
+\newcommand{\PrintTitle}{%
+  {\sffamily\bfseries\fontsize{24pt}{28pt}\selectfont \@title\par}%
+}
+\newcommand{\PrintSubtitle}{%
+  \begingroup
+  \edef\temp{\detokenize{\@subtitle}}%
+  \ifx\temp\empty\relax
+    % sin subtitulo
+  \else
+    {\sffamily\bfseries\large \@subtitle\par}%
+  \fi
+  \endgroup
+}
+\newcommand{\PrintAuthor}{%
+  \begingroup
+  \def\and{\\}% \and separa autores con salto de linea (en vez del \and de \maketitle estandar, que requiere una tabla abierta)
+  {\Large\bfseries \@author\par}%
+  \endgroup
+}
+\newcommand{\PrintDate}{%
+  {\small \@date\par}%
+}
+\makeatother
+
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{center}
+\vspace*{10mm}
+
+% Logo o imagen institucional
+\includegraphics[width=0.35\textwidth]{assets/cover.png}\par
+\vspace{12mm}
+
+% Titulo y subtitulo
+\PrintTitle
+\vspace{6mm}
+\PrintSubtitle
+
+\vspace{22mm}
+\begingroup
+\edef\temp{\detokenize{\frontmattercontext}}%
+\ifx\temp\empty\relax
+  % sin contexto adicional
+\else
+  {\normalsize \frontmattercontext\par}
+\fi
+\endgroup
+
+\vspace{18mm}
+\PrintAuthor
+
+\vspace{16mm}
+\begingroup
+\edef\temp{\detokenize{\advisorname}}%
+\ifx\temp\empty\relax
+  % sin tutor
+\else
+  \rule{0.45\textwidth}{0.4pt}\par
+  {\small \advisorlabel\ \advisorname\par}
+\fi
+\endgroup
+
+\vfill
+\begingroup
+\edef\temp{\detokenize{\frontmatterlocation}}%
+\ifx\temp\empty\relax
+  % sin ubicacion
+\else
+  {\small \frontmatterlocation\par}
+\fi
+\endgroup
+\PrintDate
+
+\end{center}
+\end{titlepage}
+
+% Preliminares (numeros romanos) y estilo simple
+\frontmatter
+\pagestyle{scrheadings}
+
+\setcounter{tocdepth}{2} % (o 1/3 segun prefieras)
+\tableofcontents
+\listoffigures
+\listoftables
+
+
+\mainmatter
+\bookmarksetup{startatroot}
+
+\chapter*{Abstract}\label{abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+\markboth{Abstract}{Abstract}
+
+\small\textbf{Palabras clave:} ciencia social abierta; bienestar
+subjetivo; personas mayores; desigualdad estructural; preregistro
+\normalsize
+
+El bienestar subjetivo en la vejez ha sido tradicionalmente comprendido
+como un atributo individual, sin embargo en contextos de alta
+desigualdad estructural como Chile, su comprensión requiere incorporar
+las condiciones materiales, de salud y relacionales en que viven las
+personas mayores. Este reporte aborda dicho fenómeno en personas de 60 a
+79 años a partir de la Encuesta de Bienestar Social (EBS) 2023, un
+instrumento público de alcance nacional del Ministerio de Desarrollo
+Social y Familia. Se formularon cinco hipótesis sobre la asociación
+entre el Índice de Bienestar Subjetivo (IBS) y cinco predictores
+---protección financiera en salud, capacidad de cubrir gastos mensuales,
+ingresos deseados, salud autopercibida y tamaño de la red de apoyo
+social--- las cuales fueron especificadas a priori en el marco de un
+trabajo de curso de Estadística Multivariada y se reformulan aquí como
+un proyecto de investigación abierto, con su protocolo, materiales y
+preregistro documentados públicamente en el Open Science Framework
+(OSF).
+
+La estrategia empírica consistió en una regresión lineal múltiple
+jerárquica de tres etapas (económica, salud y relacional) sobre una
+submuestra de personas de 60 a 79 años (N = 2.994), aplicando un enfoque
+de casos completos. Los resultados muestran que la salud autopercibida
+es el predictor más robusto del bienestar subjetivo, seguido por la
+capacidad de cubrir los gastos del hogar y la protección financiera en
+salud; el efecto de las metas de ingreso deseado, en cambio, pierde
+significancia estadística al controlar por las demás dimensiones, lo que
+sugiere un proceso de mediación. El modelo completo explica el 12,9\% de
+la varianza del bienestar subjetivo.
+
+Este reporte fue desarrollado siguiendo prácticas de ciencia abierta:
+preregistro de hipótesis, documentación pública de datos y protocolo en
+OSF, disponibilidad de un preprint del manuscrito, e implementación
+reproducible como Quarto Book en un repositorio público. Entre los
+alcances del proyecto destaca la transparencia metodológica lograda al
+formalizar un análisis previamente desarrollado; entre sus límites se
+encuentra el carácter transversal de los datos ---que impide establecer
+relaciones causales--- y el hecho de que el preregistro documenta
+hipótesis ya especificadas antes de este registro, por lo que no
+constituye un ejercicio confirmatorio en sentido estricto (ver
+\textbf{?@sec-protocolo} para una discusión detallada de esta
+limitación).
+
+\bookmarksetup{startatroot}
+
+\chapter{Introducción}\label{introducciuxf3n}
+
+\section{Motivación}\label{motivaciuxf3n}
+
+El estudio del bienestar subjetivo ha adquirido una creciente relevancia
+en las ciencias sociales contemporáneas, consolidándose como un enfoque
+crítico frente a las aproximaciones tradicionales que reducían la
+calidad de vida a indicadores estrictamente macroeconómicos o de consumo
+material. Como señalan Díaz-Bolaños et~al.
+(\citeproc{ref-diaz2018}{2018}), el bienestar subjetivo constituye una
+evaluación integral y multidimensional sobre lo que las personas piensen
+y sienten acerca de sus vidas y las conclusiones cognitivas y afectivas
+que alcanzan cuando evalúan su existencia. Este constructo no opera de
+manera aislada en el vacío individual; por el contrario, en sociedades
+caracterizadas por marcadas brechas de equidad como la chilena, la
+experiencia del bienestar se encuentra profundamente moldeada por las
+coordenadas de la estructura social, las trayectorias de curso de vida y
+las posiciones relativas que los sujetos ocupan en el entramado social
+(\citeproc{ref-pnud2013}{Programa de las Naciones Unidas para el
+Desarrollo, 2013}).
+
+Desde el pensamiento histórico-sociológico latinoamericano, esta
+problematización conecta con las corrientes críticas que cuestionaron
+los paradigmas lineales de desarrollo y modernización durante la segunda
+mitad del siglo XX. Autores como Aníbal Quijano evidenciaron cómo las
+estructuras de poder de raíz colonial perpetúan dinámicas de exclusión y
+precariedad que condicionan material y simbólicamente la existencia de
+amplios sectores de la región (\citeproc{ref-cortes2017}{Cortés, 2017}).
+Bajo este prisma, la evaluación que un individuo realiza sobre su vida
+se revela como un fenómeno sociológico atravesado por determinantes
+históricos y estructurales, y no solo por atributos individuales.
+
+Esta aproximación adquiere especial relevancia al focalizarse en las
+personas mayores de 60 a 79 años, quienes experimentan transiciones
+críticas como el cese de la vida laboral activa, la reconfiguración de
+los ingresos, el deterioro progresivo de la salud y la vulnerabilidad de
+las redes de apoyo social (\citeproc{ref-leiva2020}{Leiva et~al.,
+2020}). Para capturar esta complejidad, el presente estudio articula la
+teoría sociológica con dos marcos provenientes de las ciencias del
+cuidado: el modelo de adaptación de Callista Roy, que concibe a los
+sujetos como sistemas que responden a estímulos internos ---fisiológicos
+y psicológicos--- y externos ---roles sociales e interdependencia
+institucional--- (\citeproc{ref-ursavas2014}{Ursavaş et~al., 2014}); y
+la teoría del devenir humano de Rosemarie Rizzo Parse que sitúa el
+bienestar en la experiencia vivida y en cómo las personas co-construyen
+activamente el significado de su existencia
+(\citeproc{ref-vilchez2013}{Vílchez-Barboza et~al., 2013}). La
+confluencia de ambas perspectivas permiten operacionalizar el bienestar
+subjetivo no como un estado estático, sino como el resultado de procesos
+de ajuste ante condiciones estructurales de existencia.
+
+\section{Pregunta y objetivos de
+investigación}\label{pregunta-y-objetivos-de-investigaciuxf3n}
+
+\textbf{Pregunta de investigación:} ¿En qué medida las condiciones
+económicas, de salud y relacionales se asocian con el bienestar
+subjetivo de las personas mayores chilenas (60 a 79 años)?
+
+\textbf{Objetivo general:} Examinar la asociación entre condiciones
+estructurales ---económicas, de salud y relacionales--- y el bienestar
+subjetivo de las personas mayores en Chile, a partir de datos de la
+Encuesta de Bienestar Social (EBS) 2023.
+
+\textbf{Objetivos específicos:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Describir la distribución del Índice de Bienestar Subjetivo (IBS) y de
+  sus predictores en la población de 60 a 79 años.
+\item
+  Estimar la asociación bivariada entre cada predictor y el IBS.
+\item
+  Evaluar, mediante un modelo de regresión jerárquica, el aporte
+  relativo y la robustez de las dimensiones económica, de salud y
+  relacional sobre el IBS, identificando posibles procesos de mediación
+  o espuriedad.
+\item
+  Discutir los hallazgos a la luz de los marcos teóricos sobre
+  adaptación y experiencia vivida en la vejez.
+\end{enumerate}
+
+\section{Contribución esperada}\label{contribuciuxf3n-esperada}
+
+Este reporte contribuye de dos formas. Sustantivamente, ofrece evidencia
+empírica sobre los determinantes del bienestar subjetivo en la vejez en
+un contexto de alta desigualdad estructural, complementando la
+literatura que ha tratado el bienestar como atributo predominantemente
+individual. Metodológicamente, formaliza dicho análisis como un proyecto
+de ciencia abierta ---con datos públicos, protocolo documentado,
+preregistro en OSF e implementación computacional reproducible---, lo
+que permite a otras personas verificar, reutilizar o extender el
+análisis aquí presentado.
+
+\section{Estructura del documento}\label{estructura-del-documento}
+
+El capítulo presenta el respaldo teórico que orienta la selección de
+dimensiones y variables. El \textbf{Hipótesis}
+(\textbf{?@sec-hipotesis}) formula las hipótesis de investigación y su
+estado de preregistro. El \textbf{?@sec-metodos} describe los datos, las
+variables y el protocolo de investigación bajo la estructura IPO. El
+\textbf{?@sec-resultados} reporta los resultados univariados, bivariados
+y del modelo de regresión jerárquica. Finalmente, el
+\textbf{?@sec-conclusiones} discute los hallazgos, sus alcances y sus
+límites, incluyendo las consideraciones propias de adaptar un trabajo de
+curso a un proyecto de ciencia abierta.
+
+\bookmarksetup{startatroot}
+
+\chapter{Antecedentes}\label{antecedentes}
+
+\section{Bienestar subjetivo y desigualdad estructural en América
+Latina}\label{bienestar-subjetivo-y-desigualdad-estructural-en-amuxe9rica-latina}
+
+Desde una perspectiva histórico-sociológica latinoamericana, el estudio
+del bienestar subjetivo dialoga con tradiciones críticas que han
+cuestionado los modelos de desarrollo centrados exclusivamente en el
+crecimiento económico. Durante la segunda mitad del siglo XX, la
+sociología en América Latina desarrolló marcos analíticos que
+problematizaron la modernización y la desigualdad, enfatizando cómo los
+procesos de desarrollo reproducen relaciones de dependencia y exclusión
+(\citeproc{ref-morales2016}{Morales-Martín, 2016}). En esta línea,
+autores como Aníbal Quijano evidenciaron que las estructuras de poder
+heredadas del colonialismo continúan moldeando las condiciones de vida
+en la región, reproduciendo exclusión y precariedad para amplios
+sectores de la población (\citeproc{ref-cortes2017}{Cortés, 2017}).
+Estos antecedentes permiten situar el bienestar subjetivo no solo como
+una evaluación individual, sino como una experiencia atravesada por
+desigualdades históricas y estructurales.
+
+\section{Marcos teóricos sobre bienestar y adaptación en la
+vejez}\label{marcos-teuxf3ricos-sobre-bienestar-y-adaptaciuxf3n-en-la-vejez}
+
+Para abordar esta complejidad, el presente estudio articula enfoques
+sociológicos con modelos provenientes de la enfermería. La teoría del
+devenir humano (\emph{humanbecoming}) de Rosemarie Rizzo Parse busca
+comprender el bienestar como una experiencia vivida, donde las personas
+construyen el significado de su vida a partir de sus relaciones,
+emociones y evaluaciones personales
+(\citeproc{ref-vilchez2013}{Vílchez-Barboza et~al., 2013}). El modelo de
+adaptación de Callista Roy, por su parte, incorpora una dimensión
+estructural al análisis, entendiendo a las personas como sistemas que
+deben adaptarse a condiciones cambiantes en distintos ámbitos
+(\citeproc{ref-ursavas2014}{Ursavaş et~al., 2014}).
+
+La articulación de ambos modelos permite comprender el bienestar
+subjetivo como una expresión de cómo los individuos interpretan su
+existencia en interacción con procesos de adaptación frente a estímulos
+tanto internos ---fisiológicos--- como externos ---el rol social y la
+interdependencia---. En consecuencia, las dimensiones consideradas en
+este estudio ---satisfacción con la vida, felicidad, tranquilidad y
+relaciones sociales--- no solo representan indicadores del bienestar
+subjetivo, sino expresiones directas de la experiencia vivida que
+permiten analizar cómo variables estructurales ---condiciones
+económicas, estado de salud y redes de apoyo social--- inciden en dicha
+construcción subjetiva (\citeproc{ref-farfan2021}{Farfán-Gómez, 2021}).
+
+\section{El Índice de Bienestar Subjetivo (IBS) y sus
+dimensiones}\label{el-uxedndice-de-bienestar-subjetivo-ibs-y-sus-dimensiones}
+
+A partir de esta articulación teórica, el bienestar subjetivo se
+operacionaliza mediante el Índice de Bienestar Subjetivo (IBS), que
+sintetiza cómo las personas evalúan su propia existencia integrando
+satisfacción vital, felicidad, tranquilidad y calidad de las relaciones.
+Este índice se compone a partir de tres dimensiones estructurales:
+económica, de salud y relacional, las cuales corresponden tanto a
+condiciones que inciden en la capacidad de las personas mayores para
+adaptarse a su entorno como en la forma en que construyen el significado
+de su vida.
+
+Las personas mayores enfrentan particularidades que justifican estudiar
+este fenómeno en este grupo etario específico: la disminución de
+ingresos, el deterioro progresivo de la salud y la reconfiguración de
+las redes sociales (\citeproc{ref-leiva2020}{Leiva et~al., 2020}). El
+estudio se delimita al tramo de 60 a 79 años, excluyendo a personas de
+80 años o más, dado que en esta última etapa existe mayor prevalencia de
+dependencia funcional y deterioro cognitivo que puede comprometer la
+validez de las medidas de autorreporte utilizadas
+(\citeproc{ref-felmer2023}{Felmer \& Nazar, 2023}).
+
+\bookmarksetup{startatroot}
+
+\chapter{Hipótesis}\label{hipuxf3tesis}
+
+A partir del modelo teórico presentado en el capítulo anterior, se
+formulan las siguientes cinco hipótesis de investigación, donde IBS es
+el Índice de Bienestar Subjetivo:
+
+\[IBS = \beta_0 + \beta_1 \cdot ss6 + \beta_2 \cdot yy2 + \beta_3 \cdot yy3 + \beta_4 \cdot ss1 + \beta_5 \cdot rr1 + \varepsilon\]
+
+\textbf{H1.} Una mayor protección financiera en salud (\texttt{ss6}) se
+asociará positivamente con el IBS. Frente a un problema de salud,
+sentirse protegido financieramente reduce la incertidumbre y permite a
+las personas mayores mantener su autonomía, lo que favorece una
+evaluación más positiva de su bienestar.
+
+\textbf{H2.} Una mayor capacidad del hogar para llegar a fin de mes
+(\texttt{yy2}) se asociará positivamente con el IBS. La facilidad para
+cubrir los gastos mensuales reduce la presión económica cotidiana y
+constituye una condición estructural que habilita experiencias de vida
+más satisfactorias.
+
+\textbf{H3.} Un mayor ingreso subjetivo necesario (\texttt{yy3}) se
+asociará negativamente con el IBS. Quienes reportan necesitar más
+ingresos para cubrir las necesidades del hogar probablemente perciben
+una brecha mayor entre sus recursos actuales y sus expectativas o
+necesidades reales, lo que afecta negativamente su evaluación de
+bienestar.
+
+\textbf{H4.} Un mejor estado de salud autopercibido (\texttt{ss1}) se
+asociará positivamente con el IBS. La salud incide directamente en la
+autonomía funcional y en la experiencia cotidiana de las personas
+mayores, por lo que su deterioro limita la capacidad de participar en
+actividades significativas y compromete la evaluación subjetiva del
+bienestar.
+
+\textbf{H5.} Un mayor tamaño de la red de apoyo social (\texttt{rr1}) se
+asociará positivamente con el IBS. Contar con más amistades cercanas a
+quienes se puede pedir ayuda constituye un recurso relacional
+estructural que refleja el grado de integración social de las personas
+mayores, contribuyendo a una evaluación más positiva de su existencia.
+
+\section{Estado de preregistro}\label{estado-de-preregistro}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-important-color!10!white, colframe=quarto-callout-important-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Nota de transparencia metodológica}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+Las cinco hipótesis anteriores fueron especificadas a priori en el marco
+de un trabajo del curso de Estadística Multivariada, \textbf{antes} de
+la estimación de los modelos de regresión reportados en este documento.
+Este reporte formaliza dicho análisis bajo prácticas de ciencia abierta
+y deja registrado el protocolo, las hipótesis y los materiales
+relevantes en el Open Science Framework (OSF): \textbf{{[}enlace al
+proyecto OSF --- completar{]}}.
+
+Es importante señalar, sin embargo, que al momento de redactar este
+preregistro los datos ya habían sido explorados y los modelos ya habían
+sido estimados en el trabajo de curso original. Por lo tanto,
+\textbf{este no es un preregistro confirmatorio en sentido estricto}
+---en el cual las hipótesis se fijan y se hacen públicas antes de tener
+cualquier contacto con los datos---, sino una reformulación documentada
+y transparente de un análisis preexistente. Se declara esta condición
+explícitamente para no sobrerrepresentar el carácter confirmatorio del
+estudio, siguiendo el principio de que la transparencia sobre el proceso
+de investigación es tan relevante como sus resultados.
+
+\end{tcolorbox}
+
+\bookmarksetup{startatroot}
+
+\chapter{Métodos}\label{muxe9todos}
+
+\section{Datos abiertos}\label{datos-abiertos}
+
+La presente investigación utiliza la Encuesta de Bienestar Social (EBS)
+2023, diseñada por la Subsecretaría de Evaluación Social del Ministerio
+de Desarrollo Social y Familia de Chile. La EBS es una encuesta de
+alcance nacional, representativa de la población de 18 años o más
+residente en viviendas particulares en Chile, con diseño muestral
+probabilístico, bifásico y estratificado: la primera fase utiliza las
+viviendas logradas en la Encuesta Casen 2022, y la segunda selecciona
+aleatoriamente a una persona del hogar
+(\citeproc{ref-mds2023}{Ministerio de Desarrollo Social y Familia,
+s.~f.}).
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Fuente y acceso:} la base de datos está disponible
+  públicamente en el sitio del Observatorio Social del Ministerio de
+  Desarrollo Social y Familia:
+  \url{https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-bienestar-social-2023}.
+\item
+  \textbf{Formato de descarga:} archivo de datos
+  (\texttt{.sav}/\texttt{.RData}) más documentación metodológica y libro
+  de códigos, descargables sin registro previo.
+\item
+  \textbf{Licencia/condiciones de uso:} los microdatos son de carácter
+  público y de libre disposición para fines de investigación, citando la
+  fuente según los términos publicados por el Ministerio.
+\item
+  \textbf{Procedimiento para obtenerlos:} se descarga el archivo de la
+  encuesta desde el enlace anterior y se ubica en
+  \texttt{input/data-orig/EBS\_2023.RData} (ver \texttt{input/README.md}
+  para el detalle).
+\end{itemize}
+
+La base original está compuesta por 11.234 casos. De esta, se extrajo
+una submuestra intencionada de personas entre 60 y 79 años mediante la
+filtración de la variable \texttt{tramoebs2\ ==\ 4} (módulo de
+caracterización, ``Tramos de edad''), obteniendo 3.170 observaciones.
+Tras aplicar un enfoque de casos completos (\emph{listwise deletion})
+sobre las variables del modelo, la muestra final de análisis quedó
+constituida por 2.994 observaciones.
+
+\section{Protocolo de investigación (estructura
+IPO)}\label{protocolo-de-investigaciuxf3n-estructura-ipo}
+
+\subsection{Entrada (Input)}\label{entrada-input}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Elemento
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Descripción
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Fuente de datos & Encuesta de Bienestar Social (EBS) 2023, Ministerio de
+Desarrollo Social y Familia \\
+N original & 11.234 casos \\
+Filtro poblacional & Personas de 60 a 79 años
+(\texttt{tramoebs2\ ==\ 4}) \\
+N tras filtro de edad & 3.170 casos \\
+Variable dependiente & Índice de Bienestar Subjetivo (IBS): promedio de
+\texttt{a1}, \texttt{a2\_a}, \texttt{a2\_b}, \texttt{a12} \\
+Variables independientes & \texttt{ss6} (protección financiera en
+salud), \texttt{yy2} (capacidad de llegar a fin de mes), \texttt{yy3}
+(ingreso deseado), \texttt{ss1} (salud autopercibida), \texttt{rr1}
+(tamaño de la red de apoyo) \\
+\end{longtable}
+}
+
+\subsection{Proceso}\label{proceso}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Selección de variables relevantes y filtro por tramo etario.
+\item
+  Recodificación de valores perdidos (códigos -77 a -99) a \texttt{NA}.
+\item
+  Eliminación de casos incompletos (\emph{listwise deletion}; pérdida
+  \textless{} 5\%, umbral bajo el cual no se compromete la
+  representatividad de la muestra (\citeproc{ref-babbie2013}{Babbie,
+  2013})).
+\item
+  Construcción del IBS como promedio de cuatro ítems Likert (Alfa de
+  Cronbach = 0,71).
+\item
+  Recodificación de \texttt{ss1}, \texttt{yy2} y \texttt{ss6} a
+  variables dummy (0/1).
+\item
+  Reescalado de \texttt{yy3} a millones de pesos chilenos.
+\item
+  Estimación de un modelo de regresión lineal jerárquica en tres etapas:
+
+  \begin{enumerate}
+  \def\labelenumii{(\alph{enumii})}
+  \tightlist
+  \item
+    dimensión económica, (b) + dimensión salud, (c) + dimensión
+    relacional.
+  \end{enumerate}
+\item
+  Cálculo de coeficientes estandarizados sobre el modelo completo.
+\end{enumerate}
+
+El script reproducible de este proceso se encuentra en
+\texttt{procesamiento/preparacion.qmd} (puntos 1-6) y
+\texttt{procesamiento/analisis.qmd} (puntos 7-8).
+
+\subsection{Salida (Output)}\label{salida-output}
+
+\begin{itemize}
+\tightlist
+\item
+  Tabla de estadísticos descriptivos univariados
+  (\texttt{output/tables/}).
+\item
+  Matriz de correlaciones bivariadas.
+\item
+  Tabla comparativa de los tres modelos de regresión jerárquica
+  (\texttt{output/tables/modelos-regresion.html}).
+\item
+  Coeficientes estandarizados del modelo completo.
+\end{itemize}
+
+\section{Variables}\label{variables}
+
+\subsection{Variable dependiente: Índice de Bienestar Subjetivo
+(IBS)}\label{variable-dependiente-uxedndice-de-bienestar-subjetivo-ibs}
+
+El IBS se construye como un índice sumativo promediado a partir de
+cuatro indicadores con escalas tipo Likert de 5 puntos:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Satisfacción con la vida} (\texttt{a1}): ``¿Qué tan
+  satisfecho(a) o insatisfecho(a) se encuentra con su vida?'' (1 =
+  totalmente insatisfecho, 5 = totalmente satisfecho).
+\item
+  \textbf{Felicidad} (\texttt{a2\_a}): ``¿Cuán feliz se sintió ayer?''
+  (1 = nada, 5 = muy).
+\item
+  \textbf{Tranquilidad} (\texttt{a2\_b}): ``¿Cuán tranquilo(a) se sintió
+  ayer?'' (1 = nada, 5 = muy).
+\item
+  \textbf{Satisfacción con las relaciones} (\texttt{a12}): ``¿Qué tan
+  satisfecho(a) está con sus relaciones personales con familiares,
+  amigos, etc.?'' (1 = totalmente insatisfecho, 5 = totalmente
+  satisfecho).
+\end{itemize}
+
+El IBS resulta del promedio de los cuatro ítems (rango teórico 1-5;
+rango observado 1,25-5). No se realizó estandarización dado que los
+ítems comparten el mismo formato de respuesta; se le otorga tratamiento
+de nivel intervalar (\citeproc{ref-devaus2014}{De Vaus, 2014}).
+
+\subsection{Variables independientes}\label{variables-independientes}
+
+\textbf{Dimensión económica}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Protección financiera en salud} (\texttt{ss6}): ``Frente a un
+  problema de salud, ¿cuán protegido(a) se siente financieramente?''
+  Recodificada a dummy (0 = desprotegido, 1 = protegido).
+\item
+  \textbf{Capacidad del hogar para llegar a fin de mes} (\texttt{yy2}):
+  ``¿Su hogar puede llegar a fin de mes\ldots?'' Recodificada a dummy (0
+  = con dificultad, 1 = sin dificultad).
+\item
+  \textbf{Ingresos deseados} (\texttt{yy3}): ``¿De cuánto sería un
+  ingreso para cubrir todas las necesidades por un mes?'' Variable de
+  razón, reescalada a millones de pesos chilenos. Valores observados
+  entre \$60.000 y \$14.000.000.
+\end{itemize}
+
+\textbf{Dimensión salud}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Estado de salud autopercibido} (\texttt{ss1}): ``¿Cómo es su
+  estado de salud actual?'' Recodificada a dummy (0 = mala, 1 = buena).
+\end{itemize}
+
+\textbf{Dimensión relacional}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Tamaño de la red de apoyo social} (\texttt{rr1}): ``Amistades
+  cercanas para pedir ayuda, ¿cuántas diría que tiene?'' Variable de
+  razón (0 a 130 amistades).
+\end{itemize}
+
+\section{Estrategia de análisis}\label{estrategia-de-anuxe1lisis}
+
+Se estimó un modelo de regresión lineal múltiple jerárquica en tres
+etapas secuenciales, lo que permite rastrear la robustez de los
+predictores y capturar dinámicas de mediación o espuriedad entre
+dimensiones: (1) modelo con predictores económicos, (2) modelo que
+agrega los predictores de salud, y (3) modelo completo que agrega el
+predictor relacional. Previamente, se reportan estadísticos descriptivos
+univariados y correlaciones de Pearson bivariadas entre cada predictor y
+el IBS, interpretando los tamaños del efecto según el criterio de Cohen
+(\citeproc{ref-cohen1988}{Cohen, 1988}).
+
+\bookmarksetup{startatroot}
+
+\chapter{Resultados}\label{resultados}
+
+Interpreta resultados, limitaciones y aportes.
+
+\bookmarksetup{startatroot}
+
+\chapter{Conclusiones}\label{conclusiones}
+
+Síntesis y proyecciones futuras.
+
+\bookmarksetup{startatroot}
+
+\chapter{Referencias}\label{referencias}
+
+\protect\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-babbie2013}
+Babbie, E. (2013). \emph{The Practice of Social Research} (13.ª ed.).
+Wadsworth, Cengage Learning.
+
+\bibitem[\citeproctext]{ref-cohen1988}
+Cohen, J. (1988). \emph{Statistical power analysis for the behavioral
+sciences} (2.ª ed.). Lawrence Erlbaum Associates.
+
+\bibitem[\citeproctext]{ref-cortes2017}
+Cortés, A. (2017). An{í}bal Quijano: Marginalidad y urbanizaci{ó}n
+dependiente en Am{é}rica Latina. \emph{Polis, Revista Latinoamericana},
+\emph{16}(46), 221-238.
+\url{http://dx.doi.org/10.4067/S0718-65682017000100221}
+
+\bibitem[\citeproctext]{ref-devaus2014}
+De Vaus, D. (2014). \emph{Surveys in Social Research} (6.ª ed.).
+Routledge.
+
+\bibitem[\citeproctext]{ref-diaz2018}
+Díaz-Bolaños, C. D., Rodríguez-Trueba, J. C., \& Rodríguez, R. I.
+(2018). Bienestar subjetivo, estrategias cognitivo-afectivas y familia.
+\emph{International Journal of Development and Educational Psychology},
+\emph{3}(1), 179-189.
+\url{https://www.redalyc.org/journal/3498/349856428018/349856428018.pdf}
+
+\bibitem[\citeproctext]{ref-farfan2021}
+Farfán-Gómez, M. A. (2021). \emph{Factores que inciden en la calidad de
+vida del adulto mayor: una revisi{ó}n de literatura} {[}Mathesis,
+Universidad de Ciencias Aplicadas y Ambientales{]}.
+\url{https://repository.udca.edu.co/server/api/core/bitstreams/a4158edb-3e67-4bfb-a240-e98df81c2117/content}
+
+\bibitem[\citeproctext]{ref-felmer2023}
+Felmer, L., \& Nazar, G. (2023). Factores de riesgo de deterioro
+cognitivo en adultos mayores chilenos. \emph{Revista M{é}dica de Chile},
+\emph{151}(11), 1490-1500.
+\url{https://www.scielo.cl/pdf/rmc/v151n11/0717-6163-rmc-151-11-1490.pdf}
+
+\bibitem[\citeproctext]{ref-leiva2020}
+Leiva, A. M., Troncoso-Pantoja, C., Martínez-Sanguinetti, M. A., Nazar,
+G., Concha-Cisternas, Y., Martorell, M., Ramírez-Alarcón, K.,
+Petermann-Rocha, F., Cigarroa, I., Díaz, X., \& Celis-Morales, C.
+(2020). Personas mayores en Chile: el nuevo desaf{í}o social,
+econ{ó}mico y sanitario del siglo XXI. \emph{Revista M{é}dica de Chile},
+\emph{148}(6), 799-809.
+\url{http://dx.doi.org/10.4067/S0034-98872020000600799}
+
+\bibitem[\citeproctext]{ref-mds2023}
+Ministerio de Desarrollo Social y Familia. (s.~f.). \emph{Encuesta de
+Bienestar Social 2023}.
+\url{https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-bienestar-social-2023}
+
+\bibitem[\citeproctext]{ref-morales2016}
+Morales-Martín, J. J. (2016). La sociolog{í}a del desarrollo en
+Am{é}rica Latina: una tensi{ó}n permanente entre democracia y
+crecimiento econ{ó}mico. \emph{Espacio Abierto}, \emph{25}(3), 171-181.
+\url{https://www.redalyc.org/pdf/122/12249678012.pdf}
+
+\bibitem[\citeproctext]{ref-pnud2013}
+Programa de las Naciones Unidas para el Desarrollo. (2013).
+\emph{Desarrollo Humano en Chile. Bienestar subjetivo: el desaf{í}o de
+repensar el desarrollo}. PNUD.
+\url{https://www.undp.org/es/chile/publicaciones/idh-bienestar-subjetivo}
+
+\bibitem[\citeproctext]{ref-ursavas2014}
+Ursavaş, F., Karayurt, Ö., \& İşeri, Ö. (2014). Nursing Approach Based
+on Roy Adaptation Model in a Patient Undergoing Breast Conserving
+Surgery for Breast Cancer. \emph{The Journal of Breast Health},
+\emph{10}(3), 134-140.
+\url{https://pmc.ncbi.nlm.nih.gov/articles/PMC5351537/}
+
+\bibitem[\citeproctext]{ref-vilchez2013}
+Vílchez-Barboza, V., Paravic-Klijn, T., \& Salazar Molina, A. (2013). La
+escuela de pensamiento Humanbecoming: una alternativa para la pr{á}ctica
+de la enfermer{í}a. \emph{Ciencia y Enfermer{í}a}, \emph{19}(2), 23-34.
+\url{http://dx.doi.org/10.4067/S0717-95532013000200003}
+
+\end{CSLReferences}
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{part}{Apéndices}
+\appendix
+
+\chapter{Instrumentos de
+levantamiento}\label{instrumentos-de-levantamiento}
+
+Incluye cuestionarios, guias de entrevista, etc.
+
+\chapter{Tablas adicionales}\label{tablas-adicionales}
+
+Tablas extendidas, tests de robustez, etc.
+
+
+\backmatter
+
+% --- Cuerpo del libro (capítulos) en arábigos ---
+\mainmatter
+\pagestyle{scrheadings}
+
+% --- (Opcional) Estilo del índice general ---
+% \addtocontents{toc}{\protect\thispagestyle{plain}}
+
+
+\end{document}

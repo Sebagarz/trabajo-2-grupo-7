@@ -3,4 +3,20 @@ title: "Instrumentos de levantamiento"
 suppress-bibliography: true
 ---
 
-Incluye cuestionarios, guias de entrevista, etc.
+Este anexo incluye los ítems originales del cuestionario de la Encuesta de Bienestar Social (EBS) 2023 utilizados para construir el Índice de
+Bienestar Subjetivo (IBS) y sus predictores.
+
+| Variable | Ítem original | Categorías |
+|---|---|---|
+| `a1` | "¿Qué tan satisfecho(a) o insatisfecho(a) se encuentra con su vida?" | 1 (totalmente insatisfecho) a 5 (totalmente satisfecho) |
+| `a2_a` | "¿Cuán feliz se sintió ayer?" | 1 (nada) a 5 (muy) |
+| `a2_b` | "¿Cuán tranquilo(a) se sintió ayer?" | 1 (nada) a 5 (muy) |
+| `a12` | "¿Qué tan satisfecho(a) está con sus relaciones personales con familiares, amigos, etc.?" | 1 (totalmente insatisfecho) a 5 (totalmente satisfecho) |
+| `ss6` | "Frente a un problema de salud ¿cuán protegido(a) se siente financieramente?" | 1 (muy desprotegido) a 5 (muy protegido) |
+| `yy2` | "¿Su hogar puede llegar a fin de mes...?" | 1 (con mucha dificultad) a 5 (con mucha facilidad) |
+| `yy3` | "¿De cuánto sería un ingreso para cubrir todas las necesidades por un mes?" | Montos entre $60.000 y $14.000.000 pesos chilenos |
+| `ss1` | "¿Cómo es su estado de salud actual?" | 1 (muy malo) a 5 (muy bueno) |
+| `rr1` | "Amistades cercanas para pedir ayuda, ¿cuántas diría que tiene?" | 0 a 130 |
+
+El cuestionario completo y el libro de códigos de la EBS 2023 están disponibles públicamente en el sitio del Observatorio Social del Ministerio
+de Desarrollo Social y Familia.

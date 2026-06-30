@@ -4,19 +4,39 @@
     "href": "01-introduccion.html",
     "title": "2  Introducción",
     "section": "",
-    "text": "Motivación, preguntas de investigación, Objetivo general y específicos, contribución esperada, estructura del documento.\nEl estudio del bienestar subjetivo ha adquirido una progresiva centralidad en las ciencias sociales contemporáneas, consolidándose como un enfoque crítico frente a las aproximaciones tradicionales que reducían la calidad de vida a indicadores estrictamente macroeconómicos o de consumo material. Como señalan Díaz et al. (2018), el bienestar subjetivo constituye una evaluación integral y multidimensional sobre “lo que las personas piensan y sienten acerca de sus vidas y las conclusiones cognoscitivas y afectivas que alcanzan cuando evalúan su existencia”. Este constructo no opera de manera aislada en el vacío individual; por el contrario, en sociedades caracterizadas por marcadas brechas de equidad como la chilena, la experiencia del bienestar se encuentra profundamente moldeada por las coordenadas de la estructura social, las trayectorias de curso de vida y las posiciones relativas que los sujetos ocupan en el entramado institucional (PNUD, 2013).\nDesde la matriz del pensamiento histórico-sociológico de América Latina, esta problematización conecta con las corrientes críticas que cuestionaron los paradigmas lineales de desarrollo y modernización durante la segunda mitad del siglo XX. Autores fundamentales como Aníbal Quijano evidenciaron cómo las estructuras de poder de raíz colonial perpetúan dinámicas de exclusión y precariedad que condicionan material y simbólicamente la existencia de las poblaciones de la región (Cortés, 2017). Bajo este prisma, la evaluación que un individuo realiza sobre su vida se revela como un fenómeno sociológico atravesado por determinantes históricos y estructurales. Esta aproximación adquiere una relevancia analítica urgente al focalizarse en las personas mayores localizadas en el tramo de 60 a 79 años, un segmento de la población que experimenta transiciones críticas vitales como el cese de la vida laboral activa, la reconfiguración drástica de los ingresos económicos familiares, el declive funcional de la salud y la vulnerabilidad de las redes de apoyo comunitario (Leiva et al., 2020). Para capturar la complejidad empírica y conceptual de este fenómeno en la vejez, la presente investigación implementa un marco interdisciplinario que articula la teoría sociológica con modelos teóricos provenientes de las ciencias de los cuidados. Específicamente, se adopta el “modelo de adaptación” de Callista Roy, el cual concibe a los sujetos como sistemas holísticos y adaptativos que responden de manera constante a estímulos internos (fisiológicos y psicológicos) y externos (roles sociales y dinámicas de interdependencia institucional) (Ursavaş et al., 2014). Este enfoque se complementa con la “teoría del devenir humano” de Rosemarie Rizzo Parse, la cual sitúa el bienestar en la dimensión de la experiencia vivida, priorizando cómo los seres humanos co-crean activamente los significados de su existencia a partir de sus emociones, percepciones subjetivas y vínculos relacionales (Vílchez-Barboza et al., 2013). La confluencia de ambas perspectivas permite operacionalizar el bienestar subjetivo no como un estado estático, sino como el resultado de procesos de ajuste ante las condiciones estructurales de existencia.\nEstrategia empirica e hipotesis.\nEl modelo analítico desarrollado por el grupo de investigación descompone las condiciones estructurales y las experiencias de vida de las personas mayores en tres grandes dimensiones conceptuales fundamentales: económica, salud/bienestar y relaciones sociales. La Dimensión Económica es evaluada mediante tres indicadores diferenciados: la protección financiera percibida en salud (ss6), la capacidad declarada del hogar para llegar a fin de mes (yy2) y la expectativa de ingresos deseados mensuales (yy3). La Dimensión de Salud y Bienestar incorpora el estado de salud autopercibido por el sujeto (ss1). Por último, la Dimensión de Relaciones Sociales integra el tamaño de la red de apoyo instrumental y emocional expresado en el capital de amistades cercanas (rr1). La variable endógena del estudio corresponde al Índice de Bienestar Subjetivo (IBS), un constructo compuesto sumativo y promediado que sintetiza cuatro indicadores con escalas Likert de 5 puntos: satisfacción con la vida (a1), felicidad (a2_a), tranquilidad (a2_b) y satisfacción con las relaciones interpersonales (a12).\nEn el marco de los estándares de la Ciencia Abierta, la formulación y el pre-registro de hipótesis constituyen pilares fundamentales para mitigar sesgos de publicación y evitar prácticas de manipulación analítica como el p-hacking o el harking. En el contexto específico de este reporte, es imperativo explicitar una salvedad metodológica: dado que este ejercicio se levanta sobre la base de una investigación cuantitativa desarrollada con anterioridad por algunos miembros del equipo evaluador, el proceso de pre-registro ejecutado en la plataforma OSF opera de manera simbólica y heurística. Reconociendo de forma transparente que la dirección de las asociaciones ya es conocida por los autores a partir de los análisis estadísticos previos, el establecimiento de las siguientes hipótesis no busca simular un desconocimiento ciego de la muestra. Por el contrario, se implementa como un ejercicio de consistencia lógica, formalizando de manera ex-post los tres grandes ejes explicativos que gobiernan el modelo multivariado sobre el Índice de Bienestar Subjetivo (IBS) en la población mayor chilena de 60 a 79 años: H1(Dimensión económica): La suficiencia declarada para llegar a fin de mes (yy2) y la percepción de protección financiera en salud (ss6) se asociarán positivamente con el IBS, mientras que una mayor meta de ingresos deseados (yy3) se asociará negativamente con este debido a la brecha de expectativas. H2 (Dimensión de salud y bienestar): Un mejor estado de salud general autopercibido (ss1) se asociará positivamente con el IBS, constituyendo el cimiento funcional primario para la adaptación en la vejez. H3 (Dimensión de relaciones sociales): un mayor tamaño de la red de apoyo social, medido através del recuento de amistades cercanas (rr1), se asociará positivamente con el IBS, operando como un factor protector frente el asilamiento.\nLos resultados de la modelación multivariada jerárquica desvelan que el modelo definitivo logra explicar el 12.9% de la varianza total del constructo (\\(R^2_{adj} = .1280\\)). El predictor fundamental de la evaluación existencial de las personas mayores corresponde a la salud percibida (\\(B = 0.354, p &lt; .001\\)), seguida por la solvencia cualitativa para cubrir los gastos mensuales (\\(B = 0.236, p &lt; .001\\)) y la protección financiera en salud (\\(B = 0.191, p &lt; .001\\)). Un hallazgo crítico radica en el comportamiento del ingreso deseado monetario bruto (\\(yy3\\)), el cual pierde significancia estadística en el modelo final (\\(B = 0.048, p = .053\\)) al ser controlado por las dimensiones sanitarias y comunitarias. Esto demuestra un proceso de mediación total: el impacto del dinero abstracto se diluye ante la certeza cualitativa de la salud y la suficiencia percibida, validando los supuestos de la teoría del devenir humano respecto a que el bienestar se construye desde la certidumbre de la experiencia vivida y no de la acumulación material nominal. Respecto a los alcances y límites de este proyecto bajo el estándar de la Ciencia Abierta, la principal fortaleza de esta investigación radica en la transparencia y reproducibilidad de su diseño empírico. Al estructurar el flujo de trabajo bajo el esquema analítico IPO (Input-Process-Output) implementado en un Quarto Book, se garantiza que cualquier investigador externo pueda auditar y replicar de manera exacta la muestra final de 2.994 observaciones extraída de la Encuesta de Bienestar Social (EBS) 2023. No obstante, el proyecto reconoce como límite metodológico la naturaleza de corte transversal de los datos secundarios utilizados, lo que impide establecer relaciones de causalidad estricta entre las dimensiones económicas o sanitarias y el IBS de forma bidireccional. A pesar de esta restricción, el pre-registro transparente de los protocolos en la plataforma OSF y la disposición pública del código de procesamiento mitigan los sesgos analíticos tradicionales, sentando un precedente metodológico para la democratización del conocimiento sociológico computacional en el país.",
+    "text": "2.1 Motivación\nEl estudio del bienestar subjetivo ha adquirido una creciente relevancia en las ciencias sociales contemporáneas, consolidándose como un enfoque crítico frente a las aproximaciones tradicionales que reducían la calidad de vida a indicadores estrictamente macroeconómicos o de consumo material. Como señalan Díaz-Bolaños et al. (2018), el bienestar subjetivo constituye una evaluación integral y multidimensional sobre lo que las personas piensen y sienten acerca de sus vidas y las conclusiones cognitivas y afectivas que alcanzan cuando evalúan su existencia. Este constructo no opera de manera aislada en el vacío individual; por el contrario, en sociedades caracterizadas por marcadas brechas de equidad como la chilena, la experiencia del bienestar se encuentra profundamente moldeada por las coordenadas de la estructura social, las trayectorias de curso de vida y las posiciones relativas que los sujetos ocupan en el entramado social (Programa de las Naciones Unidas para el Desarrollo, 2013).\nDesde el pensamiento histórico-sociológico latinoamericano, esta problematización conecta con las corrientes críticas que cuestionaron los paradigmas lineales de desarrollo y modernización durante la segunda mitad del siglo XX. Autores como Aníbal Quijano evidenciaron cómo las estructuras de poder de raíz colonial perpetúan dinámicas de exclusión y precariedad que condicionan material y simbólicamente la existencia de amplios sectores de la región (Cortés, 2017). Bajo este prisma, la evaluación que un individuo realiza sobre su vida se revela como un fenómeno sociológico atravesado por determinantes históricos y estructurales, y no solo por atributos individuales.\nEsta aproximación adquiere especial relevancia al focalizarse en las personas mayores de 60 a 79 años, quienes experimentan transiciones críticas como el cese de la vida laboral activa, la reconfiguración de los ingresos, el deterioro progresivo de la salud y la vulnerabilidad de las redes de apoyo social (Leiva et al., 2020). Para capturar esta complejidad, el presente estudio articula la teoría sociológica con dos marcos provenientes de las ciencias del cuidado: el modelo de adaptación de Callista Roy, que concibe a los sujetos como sistemas que responden a estímulos internos —fisiológicos y psicológicos— y externos —roles sociales e interdependencia institucional— (Ursavaş et al., 2014); y la teoría del devenir humano de Rosemarie Rizzo Parse que sitúa el bienestar en la experiencia vivida y en cómo las personas co-construyen activamente el significado de su existencia (Vílchez-Barboza et al., 2013). La confluencia de ambas perspectivas permiten operacionalizar el bienestar subjetivo no como un estado estático, sino como el resultado de procesos de ajuste ante condiciones estructurales de existencia.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción</span>"
     ]
   },
   {
-    "objectID": "02-antecedentes.html",
-    "href": "02-antecedentes.html",
-    "title": "3  Antecedentes",
-    "section": "",
-    "text": "Respaldo teórico y empírico de la investigación",
+    "objectID": "01-introduccion.html#pregunta-y-objetivos-de-investigación",
+    "href": "01-introduccion.html#pregunta-y-objetivos-de-investigación",
+    "title": "2  Introducción",
+    "section": "2.2 Pregunta y objetivos de investigación",
+    "text": "2.2 Pregunta y objetivos de investigación\nPregunta de investigación: ¿En qué medida las condiciones económicas, de salud y relacionales se asocian con el bienestar subjetivo de las personas mayores chilenas (60 a 79 años)?\nObjetivo general: Examinar la asociación entre condiciones estructurales —económicas, de salud y relacionales— y el bienestar subjetivo de las personas mayores en Chile, a partir de datos de la Encuesta de Bienestar Social (EBS) 2023.\nObjetivos específicos:\n\nDescribir la distribución del Índice de Bienestar Subjetivo (IBS) y de sus predictores en la población de 60 a 79 años.\nEstimar la asociación bivariada entre cada predictor y el IBS.\nEvaluar, mediante un modelo de regresión jerárquica, el aporte relativo y la robustez de las dimensiones económica, de salud y relacional sobre el IBS, identificando posibles procesos de mediación o espuriedad.\nDiscutir los hallazgos a la luz de los marcos teóricos sobre adaptación y experiencia vivida en la vejez.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Antecedentes</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción</span>"
+    ]
+  },
+  {
+    "objectID": "01-introduccion.html#contribución-esperada",
+    "href": "01-introduccion.html#contribución-esperada",
+    "title": "2  Introducción",
+    "section": "2.3 Contribución esperada",
+    "text": "2.3 Contribución esperada\nEste reporte contribuye de dos formas. Sustantivamente, ofrece evidencia empírica sobre los determinantes del bienestar subjetivo en la vejez en un contexto de alta desigualdad estructural, complementando la literatura que ha tratado el bienestar como atributo predominantemente individual. Metodológicamente, formaliza dicho análisis como un proyecto de ciencia abierta —con datos públicos, protocolo documentado, preregistro en OSF e implementación computacional reproducible—, lo que permite a otras personas verificar, reutilizar o extender el análisis aquí presentado.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción</span>"
+    ]
+  },
+  {
+    "objectID": "01-introduccion.html#estructura-del-documento",
+    "href": "01-introduccion.html#estructura-del-documento",
+    "title": "2  Introducción",
+    "section": "2.4 Estructura del documento",
+    "text": "2.4 Estructura del documento\nEl capítulo Antecedentes presenta el respaldo teórico que orienta la selección de dimensiones y variables. El capítulo Hipótesis formula las hipótesis de investigación y su estado de preregistro. El capítulo Métodos describe los datos, las variables y el protocolo de investigación bajo la estructura IPO. El capítulo Resultados reporta los resultados univariados, bivariados y del modelo de regresión jerárquica. Finalmente, El capítulo Conclusiones discute los hallazgos, sus alcances y sus límites, incluyendo las consideraciones propias de adaptar un trabajo de curso a un proyecto de ciencia abierta.\n\n\n\n\n\n\nCortés, A. (2017). Aníbal Quijano: Marginalidad y urbanización dependiente en América Latina. Polis, Revista Latinoamericana, 16(46), 221-238. http://dx.doi.org/10.4067/S0718-65682017000100221\n\n\nDíaz-Bolaños, C. D., Rodríguez-Trueba, J. C., & Rodríguez, R. I. (2018). Bienestar subjetivo, estrategias cognitivo-afectivas y familia. International Journal of Development and Educational Psychology, 3(1), 179-189. https://www.redalyc.org/journal/3498/349856428018/349856428018.pdf\n\n\nLeiva, A. M., Troncoso-Pantoja, C., Martínez-Sanguinetti, M. A., Nazar, G., Concha-Cisternas, Y., Martorell, M., Ramírez-Alarcón, K., Petermann-Rocha, F., Cigarroa, I., Díaz, X., & Celis-Morales, C. (2020). Personas mayores en Chile: el nuevo desafío social, económico y sanitario del siglo XXI. Revista Médica de Chile, 148(6), 799-809. http://dx.doi.org/10.4067/S0034-98872020000600799\n\n\nPrograma de las Naciones Unidas para el Desarrollo. (2013). Desarrollo Humano en Chile. Bienestar subjetivo: el desafío de repensar el desarrollo. PNUD. https://www.undp.org/es/chile/publicaciones/idh-bienestar-subjetivo\n\n\nUrsavaş, F., Karayurt, Ö., & İşeri, Ö. (2014). Nursing Approach Based on Roy Adaptation Model in a Patient Undergoing Breast Conserving Surgery for Breast Cancer. The Journal of Breast Health, 10(3), 134-140. https://pmc.ncbi.nlm.nih.gov/articles/PMC5351537/\n\n\nVílchez-Barboza, V., Paravic-Klijn, T., & Salazar Molina, A. (2013). La escuela de pensamiento Humanbecoming: una alternativa para la práctica de la enfermería. Ciencia y Enfermería, 19(2), 23-34. http://dx.doi.org/10.4067/S0717-95532013000200003",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción</span>"
     ]
   },
   {
@@ -24,9 +44,49 @@
     "href": "03-hipotesis.html",
     "title": "4  Hipótesis",
     "section": "",
-    "text": "Hipótesis de investigación. Deben ser pre-registradas.",
+    "text": "4.1 Estado de preregistro\nA partir del modelo teórico presentado en el capítulo anterior, se formulan las siguientes cinco hipótesis de investigación, donde IBS es el Índice de Bienestar Subjetivo:\n\\[IBS = \\beta_0 + \\beta_1 \\cdot ss6 + \\beta_2 \\cdot yy2 + \\beta_3 \\cdot yy3 + \\beta_4 \\cdot ss1 + \\beta_5 \\cdot rr1 + \\varepsilon\\]\nH1. Una mayor protección financiera en salud (ss6) se asociará positivamente con el IBS. Frente a un problema de salud, sentirse protegido financieramente reduce la incertidumbre y permite a las personas mayores mantener su autonomía, lo que favorece una evaluación más positiva de su bienestar.\nH2. Una mayor capacidad del hogar para llegar a fin de mes (yy2) se asociará positivamente con el IBS. La facilidad para cubrir los gastos mensuales reduce la presión económica cotidiana y constituye una condición estructural que habilita experiencias de vida más satisfactorias.\nH3. Un mayor ingreso subjetivo necesario (yy3) se asociará negativamente con el IBS. Quienes reportan necesitar más ingresos para cubrir las necesidades del hogar probablemente perciben una brecha mayor entre sus recursos actuales y sus expectativas o necesidades reales, lo que afecta negativamente su evaluación de bienestar.\nH4. Un mejor estado de salud autopercibido (ss1) se asociará positivamente con el IBS. La salud incide directamente en la autonomía funcional y en la experiencia cotidiana de las personas mayores, por lo que su deterioro limita la capacidad de participar en actividades significativas y compromete la evaluación subjetiva del bienestar.\nH5. Un mayor tamaño de la red de apoyo social (rr1) se asociará positivamente con el IBS. Contar con más amistades cercanas a quienes se puede pedir ayuda constituye un recurso relacional estructural que refleja el grado de integración social de las personas mayores, contribuyendo a una evaluación más positiva de su existencia.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hipótesis</span>"
+    ]
+  },
+  {
+    "objectID": "03-hipotesis.html#estado-de-preregistro",
+    "href": "03-hipotesis.html#estado-de-preregistro",
+    "title": "4  Hipótesis",
+    "section": "",
+    "text": "ImportanteNota de transparencia metodológica\n\n\n\nLas cinco hipótesis anteriores fueron especificadas a priori en el marco de un trabajo del curso de Estadística Multivariada, antes de la estimación de los modelos de regresión reportados en este documento. Este reporte formaliza dicho análisis bajo prácticas de ciencia abierta y deja registrado el protocolo, las hipótesis y los materiales relevantes en el Open Science Framework (OSF): [enlace al proyecto OSF — completar].\nEs importante señalar, sin embargo, que al momento de redactar este preregistro los datos ya habían sido explorados y los modelos ya habían sido estimados en el trabajo de curso original. Por lo tanto, este no es un preregistro confirmatorio en sentido estricto —en el cual las hipótesis se fijan y se hacen públicas antes de tener cualquier contacto con los datos—, sino una reformulación documentada y transparente de un análisis preexistente. Se declara esta condición explícitamente para no sobrerrepresentar el carácter confirmatorio del estudio, siguiendo el principio de que la transparencia sobre el proceso de investigación es tan relevante como sus resultados.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hipótesis</span>"
+    ]
+  },
+  {
+    "objectID": "02-antecedentes.html",
+    "href": "02-antecedentes.html",
+    "title": "3  Antecedentes",
+    "section": "",
+    "text": "3.1 Bienestar subjetivo y desigualdad estructural en América Latina\nDesde una perspectiva histórico-sociológica latinoamericana, el estudio del bienestar subjetivo dialoga con tradiciones críticas que han cuestionado los modelos de desarrollo centrados exclusivamente en el crecimiento económico. Durante la segunda mitad del siglo XX, la sociología en América Latina desarrolló marcos analíticos que problematizaron la modernización y la desigualdad, enfatizando cómo los procesos de desarrollo reproducen relaciones de dependencia y exclusión (Morales-Martín, 2016). En esta línea, autores como Aníbal Quijano evidenciaron que las estructuras de poder heredadas del colonialismo continúan moldeando las condiciones de vida en la región, reproduciendo exclusión y precariedad para amplios sectores de la población (Cortés, 2017). Estos antecedentes permiten situar el bienestar subjetivo no solo como una evaluación individual, sino como una experiencia atravesada por desigualdades históricas y estructurales.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Antecedentes</span>"
+    ]
+  },
+  {
+    "objectID": "02-antecedentes.html#marcos-teóricos-sobre-bienestar-y-adaptación-en-la-vejez",
+    "href": "02-antecedentes.html#marcos-teóricos-sobre-bienestar-y-adaptación-en-la-vejez",
+    "title": "3  Antecedentes",
+    "section": "3.2 Marcos teóricos sobre bienestar y adaptación en la vejez",
+    "text": "3.2 Marcos teóricos sobre bienestar y adaptación en la vejez\nPara abordar esta complejidad, el presente estudio articula enfoques sociológicos con modelos provenientes de la enfermería. La teoría del devenir humano (humanbecoming) de Rosemarie Rizzo Parse busca comprender el bienestar como una experiencia vivida, donde las personas construyen el significado de su vida a partir de sus relaciones, emociones y evaluaciones personales (Vílchez-Barboza et al., 2013). El modelo de adaptación de Callista Roy, por su parte, incorpora una dimensión estructural al análisis, entendiendo a las personas como sistemas que deben adaptarse a condiciones cambiantes en distintos ámbitos (Ursavaş et al., 2014).\nLa articulación de ambos modelos permite comprender el bienestar subjetivo como una expresión de cómo los individuos interpretan su existencia en interacción con procesos de adaptación frente a estímulos tanto internos —fisiológicos— como externos —el rol social y la interdependencia—. En consecuencia, las dimensiones consideradas en este estudio —satisfacción con la vida, felicidad, tranquilidad y relaciones sociales— no solo representan indicadores del bienestar subjetivo, sino expresiones directas de la experiencia vivida que permiten analizar cómo variables estructurales —condiciones económicas, estado de salud y redes de apoyo social— inciden en dicha construcción subjetiva (Farfán-Gómez, 2021).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Antecedentes</span>"
+    ]
+  },
+  {
+    "objectID": "02-antecedentes.html#el-índice-de-bienestar-subjetivo-ibs-y-sus-dimensiones",
+    "href": "02-antecedentes.html#el-índice-de-bienestar-subjetivo-ibs-y-sus-dimensiones",
+    "title": "3  Antecedentes",
+    "section": "3.3 El Índice de Bienestar Subjetivo (IBS) y sus dimensiones",
+    "text": "3.3 El Índice de Bienestar Subjetivo (IBS) y sus dimensiones\nA partir de esta articulación teórica, el bienestar subjetivo se operacionaliza mediante el Índice de Bienestar Subjetivo (IBS), que sintetiza cómo las personas evalúan su propia existencia integrando satisfacción vital, felicidad, tranquilidad y calidad de las relaciones. Este índice se compone a partir de tres dimensiones estructurales: económica, de salud y relacional, las cuales corresponden tanto a condiciones que inciden en la capacidad de las personas mayores para adaptarse a su entorno como en la forma en que construyen el significado de su vida.\nLas personas mayores enfrentan particularidades que justifican estudiar este fenómeno en este grupo etario específico: la disminución de ingresos, el deterioro progresivo de la salud y la reconfiguración de las redes sociales (Leiva et al., 2020). El estudio se delimita al tramo de 60 a 79 años, excluyendo a personas de 80 años o más, dado que en esta última etapa existe mayor prevalencia de dependencia funcional y deterioro cognitivo que puede comprometer la validez de las medidas de autorreporte utilizadas (Felmer & Nazar, 2023).\n\n\n\n\n\n\nCortés, A. (2017). Aníbal Quijano: Marginalidad y urbanización dependiente en América Latina. Polis, Revista Latinoamericana, 16(46), 221-238. http://dx.doi.org/10.4067/S0718-65682017000100221\n\n\nFarfán-Gómez, M. A. (2021). Factores que inciden en la calidad de vida del adulto mayor: una revisión de literatura [Mathesis, Universidad de Ciencias Aplicadas y Ambientales]. https://repository.udca.edu.co/server/api/core/bitstreams/a4158edb-3e67-4bfb-a240-e98df81c2117/content\n\n\nFelmer, L., & Nazar, G. (2023). Factores de riesgo de deterioro cognitivo en adultos mayores chilenos. Revista Médica de Chile, 151(11), 1490-1500. https://www.scielo.cl/pdf/rmc/v151n11/0717-6163-rmc-151-11-1490.pdf\n\n\nLeiva, A. M., Troncoso-Pantoja, C., Martínez-Sanguinetti, M. A., Nazar, G., Concha-Cisternas, Y., Martorell, M., Ramírez-Alarcón, K., Petermann-Rocha, F., Cigarroa, I., Díaz, X., & Celis-Morales, C. (2020). Personas mayores en Chile: el nuevo desafío social, económico y sanitario del siglo XXI. Revista Médica de Chile, 148(6), 799-809. http://dx.doi.org/10.4067/S0034-98872020000600799\n\n\nMorales-Martín, J. J. (2016). La sociología del desarrollo en América Latina: una tensión permanente entre democracia y crecimiento económico. Espacio Abierto, 25(3), 171-181. https://www.redalyc.org/pdf/122/12249678012.pdf\n\n\nUrsavaş, F., Karayurt, Ö., & İşeri, Ö. (2014). Nursing Approach Based on Roy Adaptation Model in a Patient Undergoing Breast Conserving Surgery for Breast Cancer. The Journal of Breast Health, 10(3), 134-140. https://pmc.ncbi.nlm.nih.gov/articles/PMC5351537/\n\n\nVílchez-Barboza, V., Paravic-Klijn, T., & Salazar Molina, A. (2013). La escuela de pensamiento Humanbecoming: una alternativa para la práctica de la enfermería. Ciencia y Enfermería, 19(2), 23-34. http://dx.doi.org/10.4067/S0717-95532013000200003",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Antecedentes</span>"
     ]
   },
   {
@@ -34,39 +94,79 @@
     "href": "04-metodos.html",
     "title": "5  Métodos",
     "section": "",
-    "text": "Datos y protocolo de investigación",
+    "text": "5.1 Datos abiertos\nLa presente investigación utiliza la Encuesta de Bienestar Social (EBS) 2023, diseñada por la Subsecretaría de Evaluación Social del Ministerio de Desarrollo Social y Familia de Chile. La EBS es una encuesta de alcance nacional, representativa de la población de 18 años o más residente en viviendas particulares en Chile, con diseño muestral probabilístico, bifásico y estratificado: la primera fase utiliza las viviendas logradas en la Encuesta Casen 2022, y la segunda selecciona aleatoriamente a una persona del hogar (Ministerio de Desarrollo Social y Familia, s. f.).\nLa base original está compuesta por 11.234 casos. De esta, se extrajo una submuestra intencionada de personas entre 60 y 79 años mediante la filtración de la variable tramoebs2 == 4 (módulo de caracterización, “Tramos de edad”), obteniendo 3.170 observaciones. Tras aplicar un enfoque de casos completos (listwise deletion) sobre las variables del modelo, la muestra final de análisis quedó constituida por 2.994 observaciones.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Métodos</span>"
     ]
   },
   {
-    "objectID": "05-resultados.html",
-    "href": "05-resultados.html",
-    "title": "6  Resultados",
+    "objectID": "04-metodos.html#datos-abiertos",
+    "href": "04-metodos.html#datos-abiertos",
+    "title": "5  Métodos",
     "section": "",
-    "text": "Interpreta resultados, limitaciones y aportes.",
+    "text": "Fuente y acceso: la base de datos está disponible públicamente en el sitio del Observatorio Social del Ministerio de Desarrollo Social y Familia: https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-bienestar-social-2023.\nFormato de descarga: archivo de datos (.sav/.RData) más documentación metodológica y libro de códigos, descargables sin registro previo.\nLicencia/condiciones de uso: los microdatos son de carácter público y de libre disposición para fines de investigación, citando la fuente según los términos publicados por el Ministerio.\nProcedimiento para obtenerlos: se descarga el archivo de la encuesta desde el enlace anterior y se ubica en input/data-orig/EBS_2023.RData (ver input/README.md para el detalle).",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Resultados</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Métodos</span>"
     ]
   },
   {
-    "objectID": "06-conclusiones.html",
-    "href": "06-conclusiones.html",
-    "title": "7  Conclusiones",
-    "section": "",
-    "text": "Síntesis y proyecciones futuras.",
+    "objectID": "04-metodos.html#sec-protocolo",
+    "href": "04-metodos.html#sec-protocolo",
+    "title": "5  Métodos",
+    "section": "5.2 Protocolo de investigación (estructura IPO)",
+    "text": "5.2 Protocolo de investigación (estructura IPO)\n\n5.2.1 Entrada (Input)\n\n\n\n\n\n\n\nElemento\nDescripción\n\n\n\n\nFuente de datos\nEncuesta de Bienestar Social (EBS) 2023, Ministerio de Desarrollo Social y Familia\n\n\nN original\n11.234 casos\n\n\nFiltro poblacional\nPersonas de 60 a 79 años (tramoebs2 == 4)\n\n\nN tras filtro de edad\n3.170 casos\n\n\nVariable dependiente\nÍndice de Bienestar Subjetivo (IBS): promedio de a1, a2_a, a2_b, a12\n\n\nVariables independientes\nss6 (protección financiera en salud), yy2 (capacidad de llegar a fin de mes), yy3 (ingreso deseado), ss1 (salud autopercibida), rr1 (tamaño de la red de apoyo)\n\n\n\n\n\n5.2.2 Proceso\n\nSelección de variables relevantes y filtro por tramo etario.\nRecodificación de valores perdidos (códigos -77 a -99) a NA.\nEliminación de casos incompletos (listwise deletion; pérdida &lt; 5%, umbral bajo el cual no se compromete la representatividad de la muestra (Babbie, 2013)).\nConstrucción del IBS como promedio de cuatro ítems Likert (Alfa de Cronbach = 0,71).\nRecodificación de ss1, yy2 y ss6 a variables dummy (0/1).\nReescalado de yy3 a millones de pesos chilenos.\nEstimación de un modelo de regresión lineal jerárquica en tres etapas:\n\ndimensión económica, (b) + dimensión salud, (c) + dimensión relacional.\n\nCálculo de coeficientes estandarizados sobre el modelo completo.\n\nEl script reproducible de este proceso se encuentra en procesamiento/preparacion.qmd (puntos 1-6) y procesamiento/analisis.qmd (puntos 7-8).\n\n\n5.2.3 Salida (Output)\n\nTabla de estadísticos descriptivos univariados (output/tables/).\nMatriz de correlaciones bivariadas.\nTabla comparativa de los tres modelos de regresión jerárquica (output/tables/modelos-regresion.html).\nCoeficientes estandarizados del modelo completo.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Conclusiones</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Métodos</span>"
     ]
   },
   {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "Referencias",
-    "section": "",
-    "text": "Bourdieu, P. (2012). La distinción: Criterio y bases sociales del gusto. Taurus.\n\n\nDesmond, M., & Wilmers, N. (2019). The Racialized Geography of Housing. American Journal of Sociology.\n\n\nXie, Y. (2017). bookdown: Authoring Books and Technical Documents with R Markdown. Chapman; Hall/CRC.",
+    "objectID": "04-metodos.html#variables",
+    "href": "04-metodos.html#variables",
+    "title": "5  Métodos",
+    "section": "5.3 Variables",
+    "text": "5.3 Variables\n\n5.3.1 Variable dependiente: Índice de Bienestar Subjetivo (IBS)\nEl IBS se construye como un índice sumativo promediado a partir de cuatro indicadores con escalas tipo Likert de 5 puntos:\n\nSatisfacción con la vida (a1): “¿Qué tan satisfecho(a) o insatisfecho(a) se encuentra con su vida?” (1 = totalmente insatisfecho, 5 = totalmente satisfecho).\nFelicidad (a2_a): “¿Cuán feliz se sintió ayer?” (1 = nada, 5 = muy).\nTranquilidad (a2_b): “¿Cuán tranquilo(a) se sintió ayer?” (1 = nada, 5 = muy).\nSatisfacción con las relaciones (a12): “¿Qué tan satisfecho(a) está con sus relaciones personales con familiares, amigos, etc.?” (1 = totalmente insatisfecho, 5 = totalmente satisfecho).\n\nEl IBS resulta del promedio de los cuatro ítems (rango teórico 1-5; rango observado 1,25-5). No se realizó estandarización dado que los ítems comparten el mismo formato de respuesta; se le otorga tratamiento de nivel intervalar (De Vaus, 2014).\n\n\n5.3.2 Variables independientes\nDimensión económica\n\nProtección financiera en salud (ss6): “Frente a un problema de salud, ¿cuán protegido(a) se siente financieramente?” Recodificada a dummy (0 = desprotegido, 1 = protegido).\nCapacidad del hogar para llegar a fin de mes (yy2): “¿Su hogar puede llegar a fin de mes…?” Recodificada a dummy (0 = con dificultad, 1 = sin dificultad).\nIngresos deseados (yy3): “¿De cuánto sería un ingreso para cubrir todas las necesidades por un mes?” Variable de razón, reescalada a millones de pesos chilenos. Valores observados entre $60.000 y $14.000.000.\n\nDimensión salud\n\nEstado de salud autopercibido (ss1): “¿Cómo es su estado de salud actual?” Recodificada a dummy (0 = mala, 1 = buena).\n\nDimensión relacional\n\nTamaño de la red de apoyo social (rr1): “Amistades cercanas para pedir ayuda, ¿cuántas diría que tiene?” Variable de razón (0 a 130 amistades).",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Referencias</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Métodos</span>"
+    ]
+  },
+  {
+    "objectID": "04-metodos.html#estrategia-de-análisis",
+    "href": "04-metodos.html#estrategia-de-análisis",
+    "title": "5  Métodos",
+    "section": "5.4 Estrategia de análisis",
+    "text": "5.4 Estrategia de análisis\nSe estimó un modelo de regresión lineal múltiple jerárquica en tres etapas secuenciales, lo que permite rastrear la robustez de los predictores y capturar dinámicas de mediación o espuriedad entre dimensiones: (1) modelo con predictores económicos, (2) modelo que agrega los predictores de salud, y (3) modelo completo que agrega el predictor relacional. Previamente, se reportan estadísticos descriptivos univariados y correlaciones de Pearson bivariadas entre cada predictor y el IBS, interpretando los tamaños del efecto según el criterio de Cohen (Cohen, 1988).\n\n\n\n\n\n\nBabbie, E. (2013). The Practice of Social Research (13.ª ed.). Wadsworth, Cengage Learning.\n\n\nCohen, J. (1988). Statistical power analysis for the behavioral sciences (2.ª ed.). Lawrence Erlbaum Associates.\n\n\nDe Vaus, D. (2014). Surveys in Social Research (6.ª ed.). Routledge.\n\n\nMinisterio de Desarrollo Social y Familia. (s. f.). Encuesta de Bienestar Social 2023. https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-bienestar-social-2023",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Métodos</span>"
+    ]
+  },
+  {
+    "objectID": "03-hipotesis.html#sec-protocolo",
+    "href": "03-hipotesis.html#sec-protocolo",
+    "title": "4  Hipótesis",
+    "section": "",
+    "text": "ImportanteNota de transparencia metodológica\n\n\n\nLas cinco hipótesis anteriores fueron especificadas a priori en el marco de un trabajo del curso de Estadística Multivariada, antes de la estimación de los modelos de regresión reportados en este documento. Este reporte formaliza dicho análisis bajo prácticas de ciencia abierta y deja registrado el protocolo, las hipótesis y los materiales relevantes en el Open Science Framework (OSF): [enlace al proyecto OSF — completar].\nEs importante señalar, sin embargo, que al momento de redactar este preregistro los datos ya habían sido explorados y los modelos ya habían sido estimados en el trabajo de curso original. Por lo tanto, este no es un preregistro confirmatorio en sentido estricto —en el cual las hipótesis se fijan y se hacen públicas antes de tener cualquier contacto con los datos—, sino una reformulación documentada y transparente de un análisis preexistente. Se declara esta condición explícitamente para no sobrerrepresentar el carácter confirmatorio del estudio, siguiendo el principio de que la transparencia sobre el proceso de investigación es tan relevante como sus resultados.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hipótesis</span>"
+    ]
+  },
+  {
+    "objectID": "04-metodos.html#protocolo-de-investigación-estructura-ipo",
+    "href": "04-metodos.html#protocolo-de-investigación-estructura-ipo",
+    "title": "5  Métodos",
+    "section": "5.2 Protocolo de investigación (estructura IPO)",
+    "text": "5.2 Protocolo de investigación (estructura IPO)\n\n5.2.1 Entrada (Input)\n\n\n\n\n\n\n\nElemento\nDescripción\n\n\n\n\nFuente de datos\nEncuesta de Bienestar Social (EBS) 2023, Ministerio de Desarrollo Social y Familia\n\n\nN original\n11.234 casos\n\n\nFiltro poblacional\nPersonas de 60 a 79 años (tramoebs2 == 4)\n\n\nN tras filtro de edad\n3.170 casos\n\n\nVariable dependiente\nÍndice de Bienestar Subjetivo (IBS): promedio de a1, a2_a, a2_b, a12\n\n\nVariables independientes\nss6 (protección financiera en salud), yy2 (capacidad de llegar a fin de mes), yy3 (ingreso deseado), ss1 (salud autopercibida), rr1 (tamaño de la red de apoyo)\n\n\n\n\n\n5.2.2 Proceso\n\nSelección de variables relevantes y filtro por tramo etario.\nRecodificación de valores perdidos (códigos -77 a -99) a NA.\nEliminación de casos incompletos (listwise deletion; pérdida &lt; 5%, umbral bajo el cual no se compromete la representatividad de la muestra (Babbie, 2013)).\nConstrucción del IBS como promedio de cuatro ítems Likert (Alfa de Cronbach = 0,71).\nRecodificación de ss1, yy2 y ss6 a variables dummy (0/1).\nReescalado de yy3 a millones de pesos chilenos.\nEstimación de un modelo de regresión lineal jerárquica en tres etapas:\n\ndimensión económica, (b) + dimensión salud, (c) + dimensión relacional.\n\nCálculo de coeficientes estandarizados sobre el modelo completo.\n\nEl script reproducible de este proceso se encuentra en procesamiento/preparacion.qmd (puntos 1-6) y procesamiento/analisis.qmd (puntos 7-8).\n\n\n5.2.3 Salida (Output)\n\nTabla de estadísticos descriptivos univariados (output/tables/).\nMatriz de correlaciones bivariadas.\nTabla comparativa de los tres modelos de regresión jerárquica (output/tables/modelos-regresion.html).\nCoeficientes estandarizados del modelo completo.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Métodos</span>"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bienestar subjetivo en personas mayores chilenas. Una aproximación sociológica desde condiciones estructurales y experiencias de vida",
+    "section": "",
+    "text": "Palabras clave: ciencia social abierta; bienestar subjetivo; personas mayores; desigualdad estructural \n\nAbstract\nEl bienestar subjetivo en la vejez ha sido tradicionalmente comprendido como un atributo individual, sin embargo en contextos de alta desigualdad estructural como Chile, su comprensión requiere incorporar las condiciones materiales, de salud y relacionales en que viven las personas mayores. Este reporte aborda dicho fenómeno en personas de 60 a 79 años a partir de la Encuesta de Bienestar Social (EBS) 2023, un instrumento público de alcance nacional del Ministerio de Desarrollo Social y Familia. Se formularon cinco hipótesis sobre la asociación entre el Índice de Bienestar Subjetivo (IBS) y cinco predictores —protección financiera en salud, capacidad de cubrir gastos mensuales, ingresos deseados, salud autopercibida y tamaño de la red de apoyo social— las cuales fueron especificadas a priori en el marco de un trabajo de curso de Estadística Multivariada y se reformulan aquí como un proyecto de investigación abierto, con su protocolo, materiales y preregistro documentados públicamente en el Open Science Framework (OSF).\nLa estrategia empírica consistió en una regresión lineal múltiple jerárquica de tres etapas (económica, salud y relacional) sobre una submuestra de personas de 60 a 79 años (N = 2.994), aplicando un enfoque de casos completos. Los resultados muestran que la salud autopercibida es el predictor más robusto del bienestar subjetivo, seguido por la capacidad de cubrir los gastos del hogar y la protección financiera en salud; el efecto de las metas de ingreso deseado, en cambio, pierde significancia estadística al controlar por las demás dimensiones, lo que sugiere un proceso de mediación. El modelo completo explica el 12,9% de la varianza del bienestar subjetivo.\nEste reporte fue desarrollado siguiendo prácticas de ciencia abierta: preregistro de hipótesis, documentación pública de datos y protocolo en OSF, disponibilidad de un preprint del manuscrito, e implementación reproducible como Quarto Book en un repositorio público. Entre los alcances del proyecto destaca la transparencia metodológica lograda al formalizar un análisis previamente desarrollado; entre sus límites se encuentra el carácter transversal de los datos —que impide establecer relaciones causales— y el hecho de que el preregistro documenta hipótesis ya especificadas antes de este registro, por lo que no constituye un ejercicio confirmatorio en sentido estricto (ver Estado del protocolo para una discusión detallada de esta limitación).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Abstract</span>"
     ]
   },
   {
@@ -74,7 +174,7 @@
     "href": "apendices/A-encuestas.html",
     "title": "Anexo A - Instrumentos de levantamiento",
     "section": "",
-    "text": "Incluye cuestionarios, guias de entrevista, etc.",
+    "text": "Este anexo incluye los ítems originales del cuestionario de la Encuesta de Bienestar Social (EBS) 2023 utilizados para construir el Índice de Bienestar Subjetivo (IBS) y sus predictores.\n\n\n\n\n\n\n\n\nVariable\nÍtem original\nCategorías\n\n\n\n\na1\n“¿Qué tan satisfecho(a) o insatisfecho(a) se encuentra con su vida?”\n1 (totalmente insatisfecho) a 5 (totalmente satisfecho)\n\n\na2_a\n“¿Cuán feliz se sintió ayer?”\n1 (nada) a 5 (muy)\n\n\na2_b\n“¿Cuán tranquilo(a) se sintió ayer?”\n1 (nada) a 5 (muy)\n\n\na12\n“¿Qué tan satisfecho(a) está con sus relaciones personales con familiares, amigos, etc.?”\n1 (totalmente insatisfecho) a 5 (totalmente satisfecho)\n\n\nss6\n“Frente a un problema de salud ¿cuán protegido(a) se siente financieramente?”\n1 (muy desprotegido) a 5 (muy protegido)\n\n\nyy2\n“¿Su hogar puede llegar a fin de mes…?”\n1 (con mucha dificultad) a 5 (con mucha facilidad)\n\n\nyy3\n“¿De cuánto sería un ingreso para cubrir todas las necesidades por un mes?”\nMontos entre $60.000 y $14.000.000 pesos chilenos\n\n\nss1\n“¿Cómo es su estado de salud actual?”\n1 (muy malo) a 5 (muy bueno)\n\n\nrr1\n“Amistades cercanas para pedir ayuda, ¿cuántas diría que tiene?”\n0 a 130\n\n\n\nEl cuestionario completo y el libro de códigos de la EBS 2023 están disponibles públicamente en el sitio del Observatorio Social del Ministerio de Desarrollo Social y Familia.",
     "crumbs": [
       "Apéndices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>Instrumentos de levantamiento</span>"
@@ -85,10 +185,41 @@
     "href": "apendices/B-tablas.html",
     "title": "Anexo B - Tablas adicionales",
     "section": "",
-    "text": "Tablas extendidas, tests de robustez, etc.",
+    "text": "B.1 Matriz de correlaciones bivariadas\nAgregar la tabla de ejemplo\nNota: tabla de ejemplo con los coeficientes reportados en el capítulo de resultados. La matriz completa de correlaciones cruzadas entre predictores se genera en procesamiento/analisis.qmd y puede agregarse aquí al re-ejecutar el análisis con la base de datos completa.",
     "crumbs": [
       "Apéndices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Tablas adicionales</span>"
+    ]
+  },
+  {
+    "objectID": "apendices/B-tablas.html#registro-de-cambios-respecto-al-análisis-original",
+    "href": "apendices/B-tablas.html#registro-de-cambios-respecto-al-análisis-original",
+    "title": "Anexo B - Tablas adicionales",
+    "section": "B.2 Registro de cambios respecto al análisis original",
+    "text": "B.2 Registro de cambios respecto al análisis original\nEste reporte se basa en un análisis desarrollado originalmente en el curso de Estadística Multivariada. Para efectos de transparencia, se documentan aquí los principales cambios incorporados al adaptarlo como proyecto de ciencia social abierta:\n\nSe mantienen las cinco hipótesis y la especificación del modelo de regresión jerárquica originales.\nSe formaliza el protocolo de investigación bajo estructura IPO explícita (ver Hipótesis).\nSe documenta el origen, licencia y forma de acceso a los datos.\nSe incorpora una nota de transparencia sobre el estado no estrictamente confirmatorio del preregistro (ver Estado del protocolo).",
+    "crumbs": [
+      "Apéndices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Tablas adicionales</span>"
+    ]
+  },
+  {
+    "objectID": "06-conclusiones.html",
+    "href": "06-conclusiones.html",
+    "title": "7  Conclusiones",
+    "section": "",
+    "text": "7.1 Síntesis de hallazgos\nLos hallazgos de este reporte ofrecen evidencia empírica sobre la vejez en Chile: el bienestar subjetivo de las personas de 60 a 79 años no depende principalmente de metas económicas abstractas, sino de su salud físico-emocional y de la percepción cualitativa que tienen sobre su estabilidad material. Al integrar secuencialmente las dimensiones del modelo jerárquico, las aspiraciones monetarias brutas (yy3) pierden toda significancia estadística en el modelo completo, mientras que la salud percibida se consolida como el predictor más robusto, seguida de la holgura financiera percibida, la protección financiera ante contingencias médicas y el capital social en amistades cercanas.\nA la luz de los marcos conceptuales presentados en los antecedentes, estos resultados dialogan con la articulación entre la teoría del devenir humano de Rosemarie Rizzo Parse y el modelo de adaptación de Callista Roy. Desde la perspectiva de Roy, las personas mayores operan como sistemas que deben adaptarse a estímulos internos y externos cambiantes, lo cual se refleja en la robustez de la salud y la protección financiera como predictores. Desde los postulados de Rizzo Parse, el significado que los sujetos otorgan a su existencia se moldea desde sus certezas cotidianas, lo que explica que la capacidad de llegar a fin de mes retenga peso predictivo mientras el ingreso idealizado lo pierde: el bienestar se construye desde la experiencia vivida y la reducción de la incertidumbre inmediata, no desde la acumulación abstracta de riqueza. Este patrón es consistente con la advertencia del PNUD (Programa de las Naciones Unidas para el Desarrollo, 2013) de que en Chile el bienestar está profundamente atravesado por las posiciones que las personas ocupan en un entramado social marcado por la desigualdad estructural.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Conclusiones</span>"
+    ]
+  },
+  {
+    "objectID": "06-conclusiones.html#proyecciones-futuras",
+    "href": "06-conclusiones.html#proyecciones-futuras",
+    "title": "7  Conclusiones",
+    "section": "7.2 Proyecciones futuras",
+    "text": "7.2 Proyecciones futuras\nComo proyección, sería valioso extender este análisis con datos longitudinales (p. ej., paneles de la EBS en años sucesivos) para evaluar la dirección causal entre salud y bienestar subjetivo, e incorporar medidas más finas de autonomía funcional y de tipos de apoyo social, en línea con las limitaciones teóricas señaladas.\n\n\n\n\n\n\nPrograma de las Naciones Unidas para el Desarrollo. (2013). Desarrollo Humano en Chile. Bienestar subjetivo: el desafío de repensar el desarrollo. PNUD. https://www.undp.org/es/chile/publicaciones/idh-bienestar-subjetivo",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Conclusiones</span>"
     ]
   }
 ]
