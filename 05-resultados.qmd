@@ -2,4 +2,53 @@
 numbered: true
 title: Resultados
 ---
-Interpreta resultados, limitaciones y aportes.
+## Análisis univariado
+
+## Análisis bivariado
+
+## Regresión lineal múltiple
+
+## Alcances y límites del proyecto abierto
+
+**Alcances.** Este reporte demuestra que es posible formalizar un análisis
+sociológico cuantitativo bajo estándares de ciencia abierta sin rehacer la
+investigación sustantiva: documentando con transparencia el origen de los
+datos, el protocolo de análisis bajo estructura IPO, y dejando disponibles
+públicamente el preregistro, los materiales y un manuscrito reproducible.
+
+**Límites teóricos:**
+
+1. *Exclusión de la vejez avanzada y la dependencia funcional*: se excluyó
+   a personas de 80 años o más por riesgo de sesgo en el autorreporte. Esto
+   deja fuera del modelo la etapa donde la pérdida de autonomía funcional
+   es más crítica. Como solución, se propone incluir variables específicas
+   de autonomía funcional en extensiones futuras.
+2. *Falta de distinción en el tipo de apoyo social*: la variable `rr1`
+   agrega el número total de amistades, omitiendo vínculos familiares o
+   apoyos institucionales. Como solución, se propone distinguir entre
+   apoyo de amistades, de familiares (conviva o no con ellos) y de
+   instituciones estatales u organizaciones no gubernamentales.
+
+**Límites metodológicos:**
+
+1. *Datos de corte transversal*: al analizar la EBS 2023 en un solo punto
+   en el tiempo, no es posible establecer relaciones de causa y efecto; el
+   nexo entre salud y bienestar tiene alta probabilidad de ser
+   bidireccional. La solución metodológica requiere datos longitudinales
+   que sigan a los mismos sujetos a través del tiempo.
+2. *Sesgo de autorreporte*: todos los datos provienen de la percepción de
+   las propias personas encuestadas, lo que puede verse afectado por
+   problemas de memoria o deseabilidad social. Esto podría mitigarse
+   complementando las encuestas de opinión con registros administrativos,
+   como el Registro Social de Hogares o datos médicos de morbilidad.
+
+**Límite propio de la adaptación a ciencia abierta:** 
+como se señaló en [**Hipótesis**](03-hipotesis.html#sec-hipotesis), las hipótesis de este reporte fueron especificadas a priori
+en un trabajo de curso anterior, pero el preregistro formal en OSF se
+realizó después de haber estimado los modelos. Esto significa que, si bien
+las hipótesis no fueron ajustadas tras observar los resultados (no hay
+HARKing), el ejercicio no cumple con la condición temporal estricta de un
+preregistro confirmatorio. Se documenta esta condición con transparencia
+como parte del aprendizaje metodológico de este reporte, y se recomienda
+que proyectos futuros registren el protocolo en OSF *antes* de tener
+cualquier acceso a los datos.
