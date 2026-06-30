@@ -118,6 +118,7 @@ lang: es
 crossref:
   appendix-title: Anexo
   appendix-delim: " - "
+  chapters: true
 
 metadata-files:
   - _metadata.yml               # Ajustes adicionales (palabras clave, portada, etc.)

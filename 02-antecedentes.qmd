@@ -8,16 +8,7 @@ Desde una perspectiva histórico-sociológica latinoamericana, el estudio del bi
 
 Para abordar esta complejidad, el presente estudio articula enfoques sociológicos con modelos provenientes de la enfermería. La teoría del devenir humano (*humanbecoming*) de Rosemarie Rizzo Parse busca comprender el bienestar como una experiencia vivida, donde las personas construyen el significado de su vida a partir de sus relaciones, emociones y evaluaciones personales [@vilchez2013]. El modelo de adaptación de Callista Roy, por su parte, incorpora una dimensión estructural al análisis, entendiendo a las personas como sistemas que deben adaptarse a condiciones cambiantes en distintos ámbitos [@ursavas2014].
 
-La articulación de ambos modelos permite comprender el bienestar subjetivo
-como una expresión de cómo los individuos interpretan su existencia en
-interacción con procesos de adaptación frente a estímulos tanto
-internos —fisiológicos— como externos —el rol social y la
-interdependencia—. En consecuencia, las dimensiones consideradas en este
-estudio —satisfacción con la vida, felicidad, tranquilidad y relaciones
-sociales— no solo representan indicadores del bienestar subjetivo, sino
-expresiones directas de la experiencia vivida que permiten analizar cómo
-variables estructurales —condiciones económicas, estado de salud y redes
-de apoyo social— inciden en dicha construcción subjetiva [@farfan2021].
+La articulación de ambos modelos permite comprender el bienestar subjetivo como una expresión de cómo los individuos interpretan su existencia en interacción con procesos de adaptación frente a estímulos tanto internos —fisiológicos— como externos —el rol social y la interdependencia—. En consecuencia, las dimensiones consideradas en este estudio —satisfacción con la vida, felicidad, tranquilidad y relaciones sociales— no solo representan indicadores del bienestar subjetivo, sino expresiones directas de la experiencia vivida que permiten analizar cómo variables estructurales —condiciones económicas, estado de salud y redes de apoyo social— inciden en dicha construcción subjetiva [@farfan2021].
 
 ## El Índice de Bienestar Subjetivo (IBS) y sus dimensiones
 
