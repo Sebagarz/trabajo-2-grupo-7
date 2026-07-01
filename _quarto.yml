@@ -15,13 +15,13 @@ book:
   author:
     - name: Catalina Parra Arancibia
       affiliation: Departamento de Sociologia, Universidad de Chile
-      orcid: 0000-0000-0000-0000
+      orcid: 0009-0001-0272-1659
     - name: Eduardo Ortiz Améstica
       affiliation: Departamento de Sociologia, Universidad de Chile
-      orcid: 0000-0000-0000-0000
+      orcid: 0009-0007-7383-3543
     - name: Juan Gutiérrez García
       affiliation: Departamento de Sociologia, Universidad de Chile
-      orcid: 0000-0000-0000-0000
+      orcid: 0009-0003-0894-5519
   date: today              # Usa fecha fija (YYYY-MM-DD) si necesitas control editorial
   date-format: D [de] MMMM [de] YYYY
   doi: ""
