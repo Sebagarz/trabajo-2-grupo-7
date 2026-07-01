@@ -2,4 +2,71 @@
 numbered: true
 title: Resultados
 ---
-Interpreta resultados, limitaciones y aportes.
+## Análisis univariado
+
+La variable dependiente “Índice de Bienestar Subjetivo (IBS)” presenta una media de 3.83, con una desviación estándar de 0.73, y una mediana con el valor de 4.00; lo que indica que la población ubicada en el rango etario de entre 60 a 79 años presenta niveles de bienestar relativamente altos considerando el centro teórico de la escala de 3.0. En suma a esto, la presencia de una asimetría negativa del -0.62 refuerza lo señalado exponiendo que la distribución comprende una cola hacia la izquierda, es decir, la gran mayoría de los datos se encuentran en niveles medianamente altos de bienestar.
+Para la variable independiente de “Protección financiera en salud (ss6)”, la cual fue recodificada a formato dummy con valores de entre 0 y 1, presenta una media de 0.22, lo indica que solo el 22% de la población de estudio reporta sentirse protegido frente a un problema de salud. Además, se observa un coeficiente de asimetría de 1.32 confirmando así la ausencia de certezas financieras frente a problemas de salud.
+En el caso de la variable independiente “Capacidad del hogar para llegar a fin de mes (yy2)”  recodificada como Dummy, manifestó una media de 0.18 la cual indica que solo el 18% de la muestra declara ser capaz de llegar a fin de mes sin dificultad en términos económicos, al contrario del 82% que declara dificultades para llegar a fin de mes. Asimismo, exhibe una asimetría positiva de 1.65, lo que indica una cola hacia la derecha, exhibiendo así que la concentración de los datos se centran en los valores cercanos a la categoría basal 0 (con dificultad para llegar a fin de mes).
+Por otro lado, la variable “Estado de salud autopercibido (ss1)” nos entrega una media de 0.35 indicando que solo el 35% de la población muestral evalúa positivamente su salud, y que el 65% restante reporta no sentirse satisfecho con su estado de salud actual. En suma a esto, se obtuvo una asimetría positiva del 0.62 lo que reporta un sesgo moderado hacia 0.
+En la variable económica de “Ingresos deseados (yy3)” se reportó una media de 772370.4 y una mediana de 600000. Traduciendo estos resultados, podemos concluir que en promedio la población de estudio estiman que necesitan $772.370 para cubrir todas las necesidades de un mes. Por otro lado, la mediana se sitúa en los $600.000, lo que indica que el 50% de la muestra considera que con $600.000 o menos lograría cubrir las necesidades del mes. Por otro lado, presenta una marcada asimetría positiva de 3.81 lo que desvela que los ingresos deseados se concentran mayormente en ingresos medios-bajos.
+Finalmente la variable de “Tamaño de la red de apoyo social (rr1)” da una media de 5,28 y una mediana del 4.00. Esto indica que en promedio la población de estudio reporta tener 5 amistades cercanas para pedir ayuda. Sin embargo, el 50% posee una red de apoyo de 4 personas o menos. La asimetría reportada es positiva y significativa de 6.16, lo que significa que la gran mayoría de la población de estudio posee un número reducido de amistades cercanas para pedir ayuda.
+
+## Análisis bivariado
+
+Las pruebas de asociación de Pearson indicaron que todas las dimensiones de este estudio presentan vinculaciones estadísticamente significativas con el bienestar subjetivo de la población mayor (p < .001), por lo que se rechazan todas las hipótesis nulas. Todas las asociaciones son positivas y fueron estimadas sobre una muestra depurada de N = 2.994, con 2.992 grados de libertad (gl = N - 2). Los tamaños del efecto se interpretan conforme al criterio de Cohen (1998), donde valores entre .10 y .29 indican un efecto pequeño y valores .30 y .49 un efecto medio.
+El análisis detallado de las correlaciones, ordenado de mayor a menor fuerza de asociación, revela lo siguiente. La dimensión con la mayor fuerza de asociación bivariada respecto al bienestar subjetivo es la salud percibida (ss1), r(2992) = .285, t = 16.29, p < .001, correspondiente a un efecto pequeño cercano al umbral mediante según Cohen (1998). En el ámbito económico, la capacidad percibida para cubrir los gastos a fin de mes (yy2) registra una asociación de efecto pequeño, r(2992) = .214, t = 12.01, p < .001, magnitud prácticamente idéntica a la de la protección financiera ante problemas médicos (ss6), r(2992) = .206, t = 11.53, p < .001, también de efecto pequeño. Por debajo de estos factores, la dimensión social mediada en amistades cercanas (rr1) sostiene una asociación positiva de efecto pequeño, r(2992) = .126, t = 6.95, p < .001. Finalmente, la variable vinculada a las metas brutas de ingresos deseados (yy3) registra la asociación más débil del conjunto, r(2992) = .103, t = 5.67, p < .001, efecto pequeño en el límite inferior del criterio, lo que sugiere que las expectativas puramente monetarias tienen una asociación más débil con el bienestar subjetivo de este grupo en comparación con los demás factores analizados.
+Para predecir el nivel de bienestar subjetivo en la población mayor, se aplicó una modelación jerárquica por etapas combinada con el principio de parsimonia analítica. Esto permitió formalizar una función de regresión lineal múltiple con parámetros no estandarizados, expresada mediante la ecuación donde el bienestar subjetivo estimado es igual a 3.535 + 0.236(yy2) + 0.048(yy3) + 0.354(ss1) + 0.191(ss6) + 0.009(rr1) + e.
+
+## Regresión lineal múltiple
+
+La evaluación definitiva de los determinantes del bienestar subjetivo se llevó a cabo mediante una modelación lineal jerárquica dividida en tres etapas secuenciales, permitiendo rastrear la robustez de los predictores y capturar las dinámicas de mediación y espuriedad. Cabe señalar que la variable de metas brutas de ingresos deseados (yy3) fue reescalada a millones de pesos chilenos previo a la estimación, con el fin de obtener coeficientes interpretables sin alterar ningún resultado inferencial.
+En el primer modelo parcial, enfocado estrictamente en la dimensión económica, la holgura de fin de mes (yy2) y las metas de ingresos deseados (yy3) se introdujeron simultáneamente. Bajo está especificación, ambos factores ejercen efectos directos y significativos: la capacidad financiera percibida reporta un coeficiente de 0.386, t = 11.24, p < .001, mientras que el ingreso ideal mensual (yy3)  registra un coeficiente 0.099, t = 3.88, p < .001. En conjunto, este modelo logra explicar el 5.07% de la variabilidad total del bienestar subjetivo (R²aj = .050), con un estadístico F(2, 2991) = 79.92, P < .001.
+Al incorporar en el segundo modelo parcial los controles vinculados a la dimensión de salud (ss1 y ss6), la capacidad explícita global se elevó de forma considerable, alcanzando un R²aj = .1207, con un estadístico F(4, 2989) = 103.70, p < .001. Un hallazgo metodológico relevante en este paso fue la reducción en la magnitud y robustez de los coeficientes económicos originales: el peso yy2 disminuyó desde 0.386 hasta 0.241, t = 6.85, p < .001, mientras que el impacto de yy3 cayó desde 0.099 hasta 0.053, t = 2.11, p = .035, manteniéndose significativo pero con una fuerza notablemente reducida. Este patrón es consistente con un proceso de mediación parcial, donde una parte del efecto inicialmente atribuido a los factores económicos se encuentra explicado por el estado de salud del adulto mayor. 
+El modelo completo integró la dimensión relacional a través del recuento de amistades cercanas (rr1), alcanzando un poder explicativo de R² = .1294 (R²aj = .1280), con un estadístico F(5, 2988) = 88.86, p < .001. Con la incorporación del tejido social, el coeficiente de yy3 se redujo a 0.048, t = 1.93, p = .053, perdiendo por completo su significancia estadística al superar el umbral crítico de .05. Este comportamiento confirma que la asociación bivariada inicial entre las expectativas de ingresos y el bienestar subjetivo era parcialmente espuria, diluyéndose ante la presencia de variables de control de orden sanitario y comunitario, lo que es consistente con una mediación total de dicho efecto.
+Observando los coeficientes no estandarizados del modelo final, y manteniendo bajo control estadístico el comportamiento de los demás factores, es posible dimensionar el impacto práctico de cada variable. La salud percibida (ss1) se ratifica como el predictor fundamental del bienestar subjetivo en la población mayor, con el estimador más elevado del modelo: B = 0.354, t = 13.04, p < .001. En términos prácticos, el paso a un estado de salud autopercibido como bueno o muy bueno (categoría 1) se asocia con un incremento promedio de 0.354 puntos en el bienestar subjetivo en comparación con la categoría de salud mala o regular. Como segundo predictor de relevancia se ubica la suficiencia de ingresos mensuales (yy2), con B = 0.236, t = 6.73, p < .001, indicando que contar con la capacidad de llegar a fin de mes sin dificultad (categoría 1) se asocia con un aumento promedio de 0.236 puntos en el bienestar respecto a quienes declaran dificultades financieras. La protección financiera ante contingencias médicas (ss6) genera un impacto directo de B = 0.191, t = 5.92, p < .001, evidenciando que evidenciando que percibir protección financiera frente a problemas de salud (categoría 1) eleva de forma autónoma el bienestar en 0.191 puntos en comparación con sentirse desprotegido. Por su parte, la red social cercana (rr1) indica que por cada amistad sólida adicional con la que cuente el individuo, el bienestar subjetivo experimenta un aumento de 0.009 puntos, B = 0.009, t = 5.10, p < .001. Finalmente, las metas brutas de ingresos deseados (yy3) registran un coeficiente de 0.048 por millón de pesos adicional en la expectativa de ingreso, resultado que no alcanza significancia estadística en el modelo final (t = 1.93, p = .053), confirmando que las aspiraciones monetarias no inciden de forma independiente en el bienestar subjetivo de este grupo cuando el resto de las dimensiones están controladas.
+Para ponderar la importancia relativa de los predictores, los coeficientes estandarizados del modelo final revelan el siguiente orden jerárquico: salud percibida (β = 0.231), holgura económica percibida (β = 0.124), protección financiera en salud (β = 0.109), capital de amistades cercanas (β = 0.088) y, en último lugar, metas de ingresos deseados (β = 0.034). En su conjunto, el modelo explica el 12.9% de la varianza del bienestar subjetivo, cifra que refleja una capacidad explicativa moderada y es coherente con la naturaleza multidimensional del constructo. Se observa además una consistencia general entre los resultados bivariados y multivariados, con una reducción esperable en la magnitud de efectos al introducir controles, especialmente en las variables de corte económico.
+
+## Alcances y límites del proyecto abierto
+
+**Alcances.** Este reporte demuestra que es posible formalizar un análisis
+sociológico cuantitativo bajo estándares de ciencia abierta sin rehacer la
+investigación sustantiva: documentando con transparencia el origen de los
+datos, el protocolo de análisis bajo estructura IPO, y dejando disponibles
+públicamente el preregistro, los materiales y un manuscrito reproducible.
+
+**Límites teóricos:**
+
+1. *Exclusión de la vejez avanzada y la dependencia funcional*: se excluyó
+   a personas de 80 años o más por riesgo de sesgo en el autorreporte. Esto
+   deja fuera del modelo la etapa donde la pérdida de autonomía funcional
+   es más crítica. Como solución, se propone incluir variables específicas
+   de autonomía funcional en extensiones futuras.
+2. *Falta de distinción en el tipo de apoyo social*: la variable `rr1`
+   agrega el número total de amistades, omitiendo vínculos familiares o
+   apoyos institucionales. Como solución, se propone distinguir entre
+   apoyo de amistades, de familiares (conviva o no con ellos) y de
+   instituciones estatales u organizaciones no gubernamentales.
+
+**Límites metodológicos:**
+
+1. *Datos de corte transversal*: al analizar la EBS 2023 en un solo punto
+   en el tiempo, no es posible establecer relaciones de causa y efecto; el
+   nexo entre salud y bienestar tiene alta probabilidad de ser
+   bidireccional. La solución metodológica requiere datos longitudinales
+   que sigan a los mismos sujetos a través del tiempo.
+2. *Sesgo de autorreporte*: todos los datos provienen de la percepción de
+   las propias personas encuestadas, lo que puede verse afectado por
+   problemas de memoria o deseabilidad social. Esto podría mitigarse
+   complementando las encuestas de opinión con registros administrativos,
+   como el Registro Social de Hogares o datos médicos de morbilidad.
+
+**Límite propio de la adaptación a ciencia abierta:** 
+como se señaló en [**Hipótesis**](03-hipotesis.html#sec-hipotesis), las hipótesis de este reporte fueron especificadas a priori
+en un trabajo de curso anterior, pero el preregistro formal en OSF se
+realizó después de haber estimado los modelos. Esto significa que, si bien
+las hipótesis no fueron ajustadas tras observar los resultados (no hay
+HARKing), el ejercicio no cumple con la condición temporal estricta de un
+preregistro confirmatorio. Se documenta esta condición con transparencia
+como parte del aprendizaje metodológico de este reporte, y se recomienda
+que proyectos futuros registren el protocolo en OSF *antes* de tener
+cualquier acceso a los datos.

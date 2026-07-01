@@ -216,8 +216,58 @@
     "objectID": "06-conclusiones.html#proyecciones-futuras",
     "href": "06-conclusiones.html#proyecciones-futuras",
     "title": "7  Conclusiones",
-    "section": "7.2 Proyecciones futuras",
-    "text": "7.2 Proyecciones futuras\nComo proyección, sería valioso extender este análisis con datos longitudinales (p. ej., paneles de la EBS en años sucesivos) para evaluar la dirección causal entre salud y bienestar subjetivo, e incorporar medidas más finas de autonomía funcional y de tipos de apoyo social, en línea con las limitaciones teóricas señaladas.\n\n\n\n\n\n\nPrograma de las Naciones Unidas para el Desarrollo. (2013). Desarrollo Humano en Chile. Bienestar subjetivo: el desafío de repensar el desarrollo. PNUD. https://www.undp.org/es/chile/publicaciones/idh-bienestar-subjetivo",
+    "section": "7.3 Proyecciones futuras",
+    "text": "7.3 Proyecciones futuras\nComo proyección, sería valioso extender este análisis con datos longitudinales (p. ej., paneles de la EBS en años sucesivos) para evaluar la dirección causal entre salud y bienestar subjetivo, e incorporar medidas más finas de autonomía funcional y de tipos de apoyo social, en línea con las limitaciones teóricas señaladas.\n\n\n\n\n\n\nPrograma de las Naciones Unidas para el Desarrollo. (2013). Desarrollo Humano en Chile. Bienestar subjetivo: el desafío de repensar el desarrollo. PNUD. https://www.undp.org/es/chile/publicaciones/idh-bienestar-subjetivo",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Conclusiones</span>"
+    ]
+  },
+  {
+    "objectID": "05-resultados.html",
+    "href": "05-resultados.html",
+    "title": "6  Resultados",
+    "section": "",
+    "text": "6.1 Análisis univariado",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Resultados</span>"
+    ]
+  },
+  {
+    "objectID": "05-resultados.html#análisis-bivariado",
+    "href": "05-resultados.html#análisis-bivariado",
+    "title": "6  Resultados",
+    "section": "6.2 Análisis bivariado",
+    "text": "6.2 Análisis bivariado",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Resultados</span>"
+    ]
+  },
+  {
+    "objectID": "05-resultados.html#regresión-lineal-múltiple",
+    "href": "05-resultados.html#regresión-lineal-múltiple",
+    "title": "6  Resultados",
+    "section": "6.3 Regresión lineal múltiple",
+    "text": "6.3 Regresión lineal múltiple",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Resultados</span>"
+    ]
+  },
+  {
+    "objectID": "05-resultados.html#alcances-y-límites-del-proyecto-abierto",
+    "href": "05-resultados.html#alcances-y-límites-del-proyecto-abierto",
+    "title": "6  Resultados",
+    "section": "6.4 Alcances y límites del proyecto abierto",
+    "text": "6.4 Alcances y límites del proyecto abierto\nAlcances. Este reporte demuestra que es posible formalizar un análisis sociológico cuantitativo bajo estándares de ciencia abierta sin rehacer la investigación sustantiva: documentando con transparencia el origen de los datos, el protocolo de análisis bajo estructura IPO, y dejando disponibles públicamente el preregistro, los materiales y un manuscrito reproducible.\nLímites teóricos:\n\nExclusión de la vejez avanzada y la dependencia funcional: se excluyó a personas de 80 años o más por riesgo de sesgo en el autorreporte. Esto deja fuera del modelo la etapa donde la pérdida de autonomía funcional es más crítica. Como solución, se propone incluir variables específicas de autonomía funcional en extensiones futuras.\nFalta de distinción en el tipo de apoyo social: la variable rr1 agrega el número total de amistades, omitiendo vínculos familiares o apoyos institucionales. Como solución, se propone distinguir entre apoyo de amistades, de familiares (conviva o no con ellos) y de instituciones estatales u organizaciones no gubernamentales.\n\nLímites metodológicos:\n\nDatos de corte transversal: al analizar la EBS 2023 en un solo punto en el tiempo, no es posible establecer relaciones de causa y efecto; el nexo entre salud y bienestar tiene alta probabilidad de ser bidireccional. La solución metodológica requiere datos longitudinales que sigan a los mismos sujetos a través del tiempo.\nSesgo de autorreporte: todos los datos provienen de la percepción de las propias personas encuestadas, lo que puede verse afectado por problemas de memoria o deseabilidad social. Esto podría mitigarse complementando las encuestas de opinión con registros administrativos, como el Registro Social de Hogares o datos médicos de morbilidad.\n\nLímite propio de la adaptación a ciencia abierta: como se señaló en Hipótesis, las hipótesis de este reporte fueron especificadas a priori en un trabajo de curso anterior, pero el preregistro formal en OSF se realizó después de haber estimado los modelos. Esto significa que, si bien las hipótesis no fueron ajustadas tras observar los resultados (no hay HARKing), el ejercicio no cumple con la condición temporal estricta de un preregistro confirmatorio. Se documenta esta condición con transparencia como parte del aprendizaje metodológico de este reporte, y se recomienda que proyectos futuros registren el protocolo en OSF antes de tener cualquier acceso a los datos.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Resultados</span>"
+    ]
+  },
+  {
+    "objectID": "06-conclusiones.html#implicancias-teóricas",
+    "href": "06-conclusiones.html#implicancias-teóricas",
+    "title": "7  Conclusiones",
+    "section": "7.2 Implicancias teóricas",
+    "text": "7.2 Implicancias teóricas\nA partir de esta evidencia, se proponen dos modificaciones a las teorías tradicionales que modelan la calidad de vida en la tercera edad:\n\nSeparar el factor económico en modelos de adaptación: los marcos teóricos de bienestar deberían distinguir entre la cuantía nominal de ingresos y la percepción cualitativa de suficiencia, dado que esta última muestra mayor capacidad predictiva sobre la estabilidad emocional que las metas monetarias abstractas.\nEstatus catalizador y estructural de la salud: la salud física y mental no debería conceptualizarse como un predictor equivalente al resto de los estímulos, sino como un cimiento o soporte estructural básico del devenir humano, dado que su inclusión en el modelo jerárquico absorbió buena parte del impacto inicialmente atribuido al dinero.",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Conclusiones</span>"
     ]

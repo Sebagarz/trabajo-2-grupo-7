@@ -31,6 +31,22 @@ advertencia del PNUD [@pnud2013] de que en Chile el bienestar está
 profundamente atravesado por las posiciones que las personas ocupan en un
 entramado social marcado por la desigualdad estructural.
 
+## Implicancias teóricas
+
+A partir de esta evidencia, se proponen dos modificaciones a las teorías
+tradicionales que modelan la calidad de vida en la tercera edad:
+
+1. **Separar el factor económico en modelos de adaptación**: los marcos
+   teóricos de bienestar deberían distinguir entre la cuantía nominal de
+   ingresos y la percepción cualitativa de suficiencia, dado que esta
+   última muestra mayor capacidad predictiva sobre la estabilidad
+   emocional que las metas monetarias abstractas.
+2. **Estatus catalizador y estructural de la salud**: la salud física y
+   mental no debería conceptualizarse como un predictor equivalente al
+   resto de los estímulos, sino como un cimiento o soporte estructural
+   básico del devenir humano, dado que su inclusión en el modelo jerárquico
+   absorbió buena parte del impacto inicialmente atribuido al dinero.
+
 ## Proyecciones futuras
 
 Como proyección, sería valioso extender este análisis con datos

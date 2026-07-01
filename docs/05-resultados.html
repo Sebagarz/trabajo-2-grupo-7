@@ -253,8 +253,17 @@ p {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#análisis-univariado" id="toc-análisis-univariado" class="nav-link active" data-scroll-target="#análisis-univariado"><span class="header-section-number">6.1</span> Análisis univariado</a></li>
+  <li><a href="#análisis-bivariado" id="toc-análisis-bivariado" class="nav-link" data-scroll-target="#análisis-bivariado"><span class="header-section-number">6.2</span> Análisis bivariado</a></li>
+  <li><a href="#regresión-lineal-múltiple" id="toc-regresión-lineal-múltiple" class="nav-link" data-scroll-target="#regresión-lineal-múltiple"><span class="header-section-number">6.3</span> Regresión lineal múltiple</a></li>
+  <li><a href="#alcances-y-límites-del-proyecto-abierto" id="toc-alcances-y-límites-del-proyecto-abierto" class="nav-link" data-scroll-target="#alcances-y-límites-del-proyecto-abierto"><span class="header-section-number">6.4</span> Alcances y límites del proyecto abierto</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -278,11 +287,34 @@ p {
 </header>
 
 
-<p>Interpreta resultados, limitaciones y aportes.</p>
+<section id="análisis-univariado" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="análisis-univariado"><span class="header-section-number">6.1</span> Análisis univariado</h2>
+</section>
+<section id="análisis-bivariado" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="análisis-bivariado"><span class="header-section-number">6.2</span> Análisis bivariado</h2>
+</section>
+<section id="regresión-lineal-múltiple" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="regresión-lineal-múltiple"><span class="header-section-number">6.3</span> Regresión lineal múltiple</h2>
+</section>
+<section id="alcances-y-límites-del-proyecto-abierto" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="alcances-y-límites-del-proyecto-abierto"><span class="header-section-number">6.4</span> Alcances y límites del proyecto abierto</h2>
+<p><strong>Alcances.</strong> Este reporte demuestra que es posible formalizar un análisis sociológico cuantitativo bajo estándares de ciencia abierta sin rehacer la investigación sustantiva: documentando con transparencia el origen de los datos, el protocolo de análisis bajo estructura IPO, y dejando disponibles públicamente el preregistro, los materiales y un manuscrito reproducible.</p>
+<p><strong>Límites teóricos:</strong></p>
+<ol type="1">
+<li><em>Exclusión de la vejez avanzada y la dependencia funcional</em>: se excluyó a personas de 80 años o más por riesgo de sesgo en el autorreporte. Esto deja fuera del modelo la etapa donde la pérdida de autonomía funcional es más crítica. Como solución, se propone incluir variables específicas de autonomía funcional en extensiones futuras.</li>
+<li><em>Falta de distinción en el tipo de apoyo social</em>: la variable <code>rr1</code> agrega el número total de amistades, omitiendo vínculos familiares o apoyos institucionales. Como solución, se propone distinguir entre apoyo de amistades, de familiares (conviva o no con ellos) y de instituciones estatales u organizaciones no gubernamentales.</li>
+</ol>
+<p><strong>Límites metodológicos:</strong></p>
+<ol type="1">
+<li><em>Datos de corte transversal</em>: al analizar la EBS 2023 en un solo punto en el tiempo, no es posible establecer relaciones de causa y efecto; el nexo entre salud y bienestar tiene alta probabilidad de ser bidireccional. La solución metodológica requiere datos longitudinales que sigan a los mismos sujetos a través del tiempo.</li>
+<li><em>Sesgo de autorreporte</em>: todos los datos provienen de la percepción de las propias personas encuestadas, lo que puede verse afectado por problemas de memoria o deseabilidad social. Esto podría mitigarse complementando las encuestas de opinión con registros administrativos, como el Registro Social de Hogares o datos médicos de morbilidad.</li>
+</ol>
+<p><strong>Límite propio de la adaptación a ciencia abierta:</strong> como se señaló en <a href="03-hipotesis.html#sec-hipotesis"><strong>Hipótesis</strong></a>, las hipótesis de este reporte fueron especificadas a priori en un trabajo de curso anterior, pero el preregistro formal en OSF se realizó después de haber estimado los modelos. Esto significa que, si bien las hipótesis no fueron ajustadas tras observar los resultados (no hay HARKing), el ejercicio no cumple con la condición temporal estricta de un preregistro confirmatorio. Se documenta esta condición con transparencia como parte del aprendizaje metodológico de este reporte, y se recomienda que proyectos futuros registren el protocolo en OSF <em>antes</em> de tener cualquier acceso a los datos.</p>
 
 
 <!-- -->
 
+</section>
 
 </main> <!-- /main -->
 <script>
@@ -2197,7 +2229,56 @@ document.addEventListener("DOMContentLoaded", () => {
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">numbered:</span><span class="co"> true</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Resultados</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Interpreta resultados, limitaciones y aportes.</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## Análisis univariado</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Análisis bivariado</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Regresión lineal múltiple</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## Alcances y límites del proyecto abierto</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>**Alcances.** Este reporte demuestra que es posible formalizar un análisis</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>sociológico cuantitativo bajo estándares de ciencia abierta sin rehacer la</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>investigación sustantiva: documentando con transparencia el origen de los</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>datos, el protocolo de análisis bajo estructura IPO, y dejando disponibles</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>públicamente el preregistro, los materiales y un manuscrito reproducible.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>**Límites teóricos:**</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>*Exclusión de la vejez avanzada y la dependencia funcional*: se excluyó</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>   a personas de 80 años o más por riesgo de sesgo en el autorreporte. Esto</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>   deja fuera del modelo la etapa donde la pérdida de autonomía funcional</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>   es más crítica. Como solución, se propone incluir variables específicas</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>   de autonomía funcional en extensiones futuras.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>*Falta de distinción en el tipo de apoyo social*: la variable <span class="in">`rr1`</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>   agrega el número total de amistades, omitiendo vínculos familiares o</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>   apoyos institucionales. Como solución, se propone distinguir entre</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>   apoyo de amistades, de familiares (conviva o no con ellos) y de</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>   instituciones estatales u organizaciones no gubernamentales.</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>**Límites metodológicos:**</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>*Datos de corte transversal*: al analizar la EBS 2023 en un solo punto</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>   en el tiempo, no es posible establecer relaciones de causa y efecto; el</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>   nexo entre salud y bienestar tiene alta probabilidad de ser</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>   bidireccional. La solución metodológica requiere datos longitudinales</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>   que sigan a los mismos sujetos a través del tiempo.</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>*Sesgo de autorreporte*: todos los datos provienen de la percepción de</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>   las propias personas encuestadas, lo que puede verse afectado por</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>   problemas de memoria o deseabilidad social. Esto podría mitigarse</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>   complementando las encuestas de opinión con registros administrativos,</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>   como el Registro Social de Hogares o datos médicos de morbilidad.</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>**Límite propio de la adaptación a ciencia abierta:** </span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>como se señaló en <span class="co">[</span><span class="ot">**Hipótesis**</span><span class="co">](03-hipotesis.html#sec-hipotesis)</span>, las hipótesis de este reporte fueron especificadas a priori</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>en un trabajo de curso anterior, pero el preregistro formal en OSF se</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>realizó después de haber estimado los modelos. Esto significa que, si bien</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>las hipótesis no fueron ajustadas tras observar los resultados (no hay</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>HARKing), el ejercicio no cumple con la condición temporal estricta de un</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>preregistro confirmatorio. Se documenta esta condición con transparencia</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>como parte del aprendizaje metodológico de este reporte, y se recomienda</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>que proyectos futuros registren el protocolo en OSF *antes* de tener</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>cualquier acceso a los datos.</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
