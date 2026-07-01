@@ -11,7 +11,7 @@ book:
   title: Bienestar subjetivo en personas mayores chilenas. Una aproximación sociológica desde condiciones estructurales y experiencias de vida
   subtitle: Trabajo final
   output-file: reportes-facso-plantilla
-  repo-url: https://github.com/KAravena/reportesfacsobook_template  #URL del repositorio del libro (cambia segun tu repo)
+  repo-url: https://github.com/Sebagarz/trabajo-2-grupo-7.git #URL del repositorio del libro (cambia segun tu repo)
   author:
     - name: Catalina Parra Arancibia
       affiliation: Departamento de Sociologia, Universidad de Chile
