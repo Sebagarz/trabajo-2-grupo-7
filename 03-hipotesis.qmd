@@ -26,7 +26,7 @@ un trabajo del curso de Estadística Multivariada, **antes** de la
 estimación de los modelos de regresión reportados en este documento. Este
 reporte formaliza dicho análisis bajo prácticas de ciencia abierta y deja
 registrado el protocolo, las hipótesis y los materiales relevantes en el
-Open Science Framework (OSF): **[enlace al proyecto OSF — completar]**.
+Open Science Framework (OSF): **[osf.io/8tbxy](https://osf.io/8tbxy)**.
 
 Es importante señalar, sin embargo, que al momento de redactar este
 preregistro los datos ya habían sido explorados y los modelos ya habían
